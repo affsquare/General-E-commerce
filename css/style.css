@@ -1,0 +1,222 @@
+:root {
+  --Gridient: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
+  --secondary: #ffa3a3;
+  --White: #fff;
+  --Font-Color-1: #182d41;
+  --Font-Color-2: #5c7f8a;
+  --Light-Grey: #b3c9d0;
+  --red-error: #d95959;
+  --green-success: #01bfa5;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+.secondary-color {
+  color: var(--secondary);
+}
+.font-color-1 {
+  color: var(--Font-Color-1);
+}
+.font-color-2 {
+  color: var(--Font-Color-2);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #182d41;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-19 {
+  font-size: 19px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-55 {
+  width: 55%;
+}
+.w-60 {
+  width: 60%;
+}
+
+p {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.p1 {
+  color: #5c7f8a;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.p2 {
+  color: #5c7f8a;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.p3 {
+  color: #b3c9d0;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+/* Start Home */
+/* Clothes */
+.clothes-card {
+  background: url(../imgs/home1.png) rgba(255, 163, 163, 0.15);
+  background-position: 0% 50%;
+}
+.clothes-img > img,
+.phone-img > img,
+.beauty-products-img > img,
+.grocey-img > img,
+.explore-btn {
+  transition: 0.7s;
+}
+.clothes-card:hover .clothes-img > img {
+  transform: scale(1.1);
+}
+.clothes-card:hover .clothes-explore {
+  background-color: #ff6f6f;
+  font-size: 14px;
+}
+.percent {
+  font-size: 26px;
+}
+.clothes,
+.phone,
+.beauty-products,
+.grocey {
+  right: 15px;
+}
+.clothes-img::before,
+.phone-img::before,
+.beauty-products-img::before,
+.grocey-img::before  {
+  content: "";
+  position: absolute;
+  width: 138px;
+  height: 120px;
+  top: 25%;
+  right: 20px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.clothes-img::before {
+  background-color: #fcc;
+}
+.phone-img::before {
+  top: 12%;
+  height: 130px;
+  background-color: #d1e3ee;
+}
+.beauty-products-img::before{
+  top: 15px;
+  right: 30px;
+  width: 135px;
+  height: 140px;
+  background-color: #E9E7CD;
+}
+.grocey-img::before{
+  top: 12px;
+  right: 20px;
+  width: 135px;
+  height: 130px; 
+  background-color: #D4F0DA;
+}
+.explore-btn {
+  width: 143px;
+  height: 48px;
+  padding: 12px 38px;
+  text-transform: uppercase;
+  color: var(--White);
+  cursor: pointer;
+}
+.clothes-explore {
+  background-color: var(--secondary);
+}
+
+/* Phone  */
+.phone-explore {
+  background-color: #61cee5;
+}
+.phone-card {
+  background: url(../imgs/home2.png),
+    linear-gradient(
+      150deg,
+      rgb(40, 104, 163, 0.15) 0%,
+      rgb(63, 145, 189, 0.15) 39.06%,
+      rgb(97, 206, 229, 0.15) 100%
+    );
+  background-position: 0% 50%;
+}
+.phone-img {
+  padding-right: 30px;
+}
+.phone-card:hover .phone-img > img {
+  transform: scale(1.1);
+}
+.phone-card:hover .phone-explore {
+  background-color: #39bcd8;
+  font-size: 14px;
+}
+.phone-offer-number {
+  color: #708a9b;
+}
+/* Beauty Products */
+.beauty-products-card {
+  background:url(../imgs/home3.png) rgba(255, 218, 122, 0.15);
+  background-position: 0% 50%;
+}
+.beauty-products-card:hover .beauty-products-img > img {
+  transform: scale(1.1);
+}
+.beauty-products-card:hover .beauty-products-explore {
+  background-color: #C2BE57;
+  font-size: 14px;
+}
+
+.beauty-products-explore{
+background-color: #DCD88B;
+}
+.beauty-products-offer-number
+{
+  color: #BEBD9B;
+}
+
+/* grocey-card */
+.grocey-card {
+  background:url(../imgs/home4.png) rgba(1, 191, 165, 0.15);
+}
+.grocey-card:hover .grocey-img > img {
+  transform: scale(1.1);
+}
+.grocey-card:hover .grocey-explore {
+  background-color: #01BFA5;
+  font-size: 14px;
+}
+
+.grocey-explore{
+background-color: #039F8A;
+}
+.grocey-offer-number{
+  color: #8DB596;
+}
+
+/* Start All Products */
+
+/* End Home */
