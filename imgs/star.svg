@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="star-filled-rate-rating-bookmark-favourite-save-priority-important-svgrepo-com 1" clip-path="url(#clip0_921_3728)">
+<g id="Icons1">
+<path id="star" fill-rule="evenodd" clip-rule="evenodd" d="M12.0004 3.44531L14.1251 9.98456H21.0007L15.4384 14.0259L17.5631 20.5652L12.0004 16.5238L6.438 20.5652L8.56275 14.0259L3 9.98456H9.87562L12.0004 3.44531Z" fill="url(#paint0_linear_921_3728)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_921_3728" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F79B0F"/>
+<stop offset="0.84375" stop-color="#FFDA7A"/>
+</linearGradient>
+<clipPath id="clip0_921_3728">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

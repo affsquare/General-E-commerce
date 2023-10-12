@@ -29,6 +29,12 @@ h5,
 h6 {
   color: #182d41;
 }
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
 .fs-18 {
   font-size: 18px;
 }
@@ -106,7 +112,7 @@ p {
 .clothes-img::before,
 .phone-img::before,
 .beauty-products-img::before,
-.grocey-img::before  {
+.grocey-img::before {
   content: "";
   position: absolute;
   width: 138px;
@@ -124,19 +130,19 @@ p {
   height: 130px;
   background-color: #d1e3ee;
 }
-.beauty-products-img::before{
+.beauty-products-img::before {
   top: 15px;
   right: 30px;
   width: 135px;
   height: 140px;
-  background-color: #E9E7CD;
+  background-color: #e9e7cd;
 }
-.grocey-img::before{
+.grocey-img::before {
   top: 12px;
   right: 20px;
   width: 135px;
-  height: 130px; 
-  background-color: #D4F0DA;
+  height: 130px;
+  background-color: #d4f0da;
 }
 .explore-btn {
   width: 143px;
@@ -179,44 +185,213 @@ p {
 }
 /* Beauty Products */
 .beauty-products-card {
-  background:url(../imgs/home3.png) rgba(255, 218, 122, 0.15);
+  background: url(../imgs/home3.png) rgba(255, 218, 122, 0.15);
   background-position: 0% 50%;
 }
 .beauty-products-card:hover .beauty-products-img > img {
   transform: scale(1.1);
 }
 .beauty-products-card:hover .beauty-products-explore {
-  background-color: #C2BE57;
+  background-color: #c2be57;
   font-size: 14px;
 }
 
-.beauty-products-explore{
-background-color: #DCD88B;
+.beauty-products-explore {
+  background-color: #dcd88b;
 }
-.beauty-products-offer-number
-{
-  color: #BEBD9B;
+.beauty-products-offer-number {
+  color: #bebd9b;
 }
 
 /* grocey-card */
 .grocey-card {
-  background:url(../imgs/home4.png) rgba(1, 191, 165, 0.15);
+  background: url(../imgs/home4.png) rgba(1, 191, 165, 0.15);
 }
 .grocey-card:hover .grocey-img > img {
   transform: scale(1.1);
 }
 .grocey-card:hover .grocey-explore {
-  background-color: #01BFA5;
+  background-color: #01bfa5;
   font-size: 14px;
 }
 
-.grocey-explore{
-background-color: #039F8A;
+.grocey-explore {
+  background-color: #039f8a;
 }
-.grocey-offer-number{
-  color: #8DB596;
+.grocey-offer-number {
+  color: #8db596;
 }
 
 /* Start All Products */
+.all-Products-crds {
+  height: 90px;
+}
+.all-Products-crds > div > img {
+  height: 75px;
+}
 
+.all-products:hover .overlay {
+  height: 70%;
+}
+.all-products:hover .overlay::before {
+  top: -14px;
+  bottom: 0;
+}
+.beauty-text {
+  transition: 0.7s ease;
+}
+.all-products:hover .beauty-text {
+  color: var(--Font-Color-1) !important;
+  font-weight: 600;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s ease;
+  z-index: -2;
+  overflow: hidden;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  top: 13px;
+  left: 60px;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: 0.7s ease;
+  background: rgba(24, 45, 65, 0.15);
+}
+
+.beauty {
+  background: linear-gradient(135deg, #ffeed4 0%, #ffda7a 100%);
+}
+.kitchen {
+  background: linear-gradient(105deg, #a0cddb 0%, #8dacc8 100%);
+}
+.grocery {
+  background: linear-gradient(135deg, #d1ffe9 0%, #71e2ac 100%);
+}
+.furniture {
+  background: linear-gradient(105deg, #f8f8f8 0%, #e3e2e0 100%);
+}
+.clothe {
+  background: linear-gradient(135deg, #ffdeb8 0%, #fea2a2 100%);
+}
+.electronics {
+  background: linear-gradient(135deg, #79e7f6 0%, #66bdec 100%);
+}
+.electronics-card,
+.electronics-card-img,
+.sale-card,
+.sale-card-img {
+  transition: 0.7s ease;
+}
+.electronics-card:hover,
+.sale-card:hover {
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+.electronics-card:hover .electronics-card-img,
+.sale-card:hover .sale-card-img {
+  transform: translateY(-15px);
+}
+.show-all-arrow {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgb(40, 104, 163, 0.1) 0%,
+    rgb(63, 145, 189, 0.1) 39.06%,
+    rgb(97, 206, 229, 0.1) 100%
+  );
+  margin-left: 10px;
+  color: rgba(92, 127, 138, 1);
+  transition: 0.7s ease;
+}
+.show-all-btn {
+  cursor: pointer;
+}
+.show-all-btn:hover .show-all-arrow {
+  transform: translateX(10px);
+}
+.express-btn {
+  width: fit-content;
+  background-image: url(../imgs/express.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--White);
+  text-transform: uppercase;
+}
+.blue-express{
+  background: -webkit-linear-gradient(135deg, #2868A3 0%, #3F91BD 39.06%, #61CEE5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.addToCart-btn{
+  border: 1px solid rgba(179, 201, 208, 0.25);
+  padding: 8px;
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.addToCart-btn:hover{
+  width: 135px;
+}
+.sale-text{
+  color: rgba(24, 45, 65, 0.5);
+  text-decoration: line-through;
+}
+.sale-text-price{
+  color: var(--Font-Color-2);
+}
+.sale-text-perceentage{
+  color: var(--green-success);
+}
+.grocery-banner-2{
+  background-image: url(../imgs/HomeBanner2.png);
+  background-position: 10% 50%;
+}
+.grocery-banner-2-p{
+  font-size: 32px;
+}
+.subscribe > div{
+  background: url(../imgs/pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.selfcare{
+  color: #BEBD9B;
+}
+.news-letter{
+  color: rgba(255, 163, 163, 1);
+}
+.payment-methods{
+  margin-top: 32px;
+  position: relative;
+}
+.payment-methods::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #B3C9D0;
+  width: 30px;
+  height: 2px;
+}
+.copy-right {
+  background-color: rgba(179, 201, 208, 0.15);
+  color: #7D7D7D;
+}
 /* End Home */
