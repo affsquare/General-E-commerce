@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- bootstrap Link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google fonts Links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>sign in</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="login-img position-relative">
+            <img class="  " src="../imgs/login.png" alt="" />
+            <div class="login-logo">
+              <img src="../imgs/loginLogo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="login-form pt-5 ps-5 pe-4 pb-4">
+            <div class="ps-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <a class="font-color-1 d-flex align-items-center" href="../index.html">
+                  &#8592; Back to home
+                </a>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="me-1"
+                      id="langFlag"
+                      src="../imgs/united-kingdom.svg"
+                      alt=""
+                    />
+                    English
+                  </button>
+                  <ul id="mainUl" class="dropdown-menu">
+                    <li>
+                      <img
+                        class="w-100 px-3 py-2"
+                        value="ar"
+                        src="../imgs/saudi-arabia.png"
+                        alt=""
+                        role="button"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class=" px-3 py-2"
+                        value="en"
+                        src="../imgs/united-kingdom.svg"
+                        alt=""
+                        role="button"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4">
+                <h4 class="text-uppercase fw-normal">sign in</h4>
+                <h4 class="text-uppercase fw-semibold pt-3">welcome back !</h4>
+                <p class="pt-2 font-color-2">
+                  have a nice time by shopping in our platform..
+                </p>
+              </div>
+              <div class="login-inputs w-82 mt-4 pt-4">
+                <div class="input d-flex align-items-center px-4 py-3">
+                  <label for="userName ">
+                    <img src="../imgs/user.svg" alt="" />
+                  </label>
+                  <input
+                    class="font-color-2 w-100 ps-3"
+                    id="userName"
+                    type="text"
+                    placeholder="Username"
+                  />
+                </div>
+                <div class="input d-flex align-items-center px-4 py-3 mt-4">
+                  <label for="password">
+                    <img src="../imgs/lock.svg" alt="" />
+                  </label>
+                  <input
+                    class="font-color-2 w-100 ps-3"
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="text-end mt-2">
+                  <a class="forget-password" href="./forgetpassword.html"> Forget Password? </a>
+                </div>
+                <div class="login-btn pt-4 pb-3 text-center mt-4">
+                  <div class="login-btn-text">Sign in</div>
+                </div>
+                <div class="py-4 text-center font-color-2">Or</div>
+                <div
+                  class="login-with-google-facebook py-3 px-3 text-center position-relative"
+                >
+                  <div class="google-icon ps-3">
+                    <img src="../imgs/google.svg" alt="" />
+                  </div>
+                  <div class="font-color-2">Continue with Google</div>
+                </div>
+                <div
+                  class="login-with-google-facebook py-3 mt-3 px-3 text-center position-relative"
+                >
+                  <div class="google-icon ps-3">
+                    <img src="../imgs/facebook.svg" alt="" />
+                  </div>
+                  <div class="font-color-2">Continue with Facebook</div>
+                </div>
+                <div class="text-center mt-5 mb-5 font-color-2">
+                  <a class="font-color-2 me-1" href="./signup.html"
+                    >Don’t have an account?</a
+                  >
+                  <a class="fs-18 font-color-1" href="./signup.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- bootstrap Link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google fonts Links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>verification</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div
+            class="otp-img d-flex align-items-center justify-content-center position-relative"
+          >
+            <img class="" src="../imgs/otp-img.png" alt="" />
+            <div class="login-logo">
+              <img src="../imgs/loginLogo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="login-form pt-5 ps-5 pe-4 pb-4 vh-100">
+            <div class="ps-5">
+              <div class="d-flex align-items-center justify-content-between">
+                <a class="font-color-1 d-flex align-items-center" href="./forgetpassword.html">
+                  &#8592; Back
+                </a>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="me-1"
+                      id="langFlag"
+                      src="../imgs/united-kingdom.svg"
+                      alt=""
+                    />
+                    English
+                  </button>
+                  <ul id="mainUl" class="dropdown-menu">
+                    <li>
+                      <img
+                        class="w-100 px-3 py-2"
+                        value="ar"
+                        src="../imgs/saudi-arabia.png"
+                        alt=""
+                        role="button"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="px-3 py-2"
+                        value="en"
+                        src="../imgs/united-kingdom.svg"
+                        alt=""
+                        role="button"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-5">
+                <h4 class="text-uppercase fw-normal mt-5">verification</h4>
+                <h4 class="text-uppercase fw-semibold pt-3 lh-base">
+                  enter your verification code in <br />
+                  the following digits..
+                </h4>
+                <p class="pt-2 font-color-2 fs-14">
+                  by writing code you will redirected immediately to our
+                  platform.
+                </p>
+              </div>
+              <div class="otp w-82 mt-5">
+                <div class="d-flex w-100">
+                  <input
+                    class="me-4 text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                  <input
+                    class="me-4 text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                  <input
+                    class="me-4 text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                  <input
+                    class="me-4 text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                  <input
+                    class="me-4 text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                  <input
+                    class=" text-center form-control"
+                    type="number"
+                    maxlength="1"
+                    oninput="customMaxLength(this)"
+                  />
+                </div>
+                <div class="mt-5 d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="text-uppercase font-color-1 fw-semibold"
+                      >time
+                    </span>
+                    <span class="secondary-color">00:00</span>
+                  </div>
+                  <div>
+                    <span class="p2">Didn't recevie an email?</span>
+                    <span class=" font-color-1 fw-semibold"
+                      >Resend</span
+                    >
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

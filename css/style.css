@@ -12,6 +12,20 @@
 body {
   font-family: "Open Sans", sans-serif !important;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .secondary-color {
   color: var(--secondary);
 }
@@ -58,6 +72,15 @@ h6 {
 }
 .w-60 {
   width: 60%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-82 {
+  width: 82%;
+}
+.w-90 {
+  width: 90%;
 }
 
 p {
@@ -329,69 +352,192 @@ p {
   color: var(--White);
   text-transform: uppercase;
 }
-.blue-express{
-  background: -webkit-linear-gradient(135deg, #2868A3 0%, #3F91BD 39.06%, #61CEE5 100%);
+.blue-express {
+  background: -webkit-linear-gradient(
+    135deg,
+    #2868a3 0%,
+    #3f91bd 39.06%,
+    #61cee5 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.addToCart-btn{
+.addToCart-btn {
   border: 1px solid rgba(179, 201, 208, 0.25);
   padding: 8px;
   width: 42px;
   height: 40px;
   cursor: pointer;
   transition: all 0.7s ease;
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
 }
-.addToCart-btn:hover{
+.addToCart-btn:hover {
   width: 135px;
 }
-.sale-text{
+.sale-text {
   color: rgba(24, 45, 65, 0.5);
   text-decoration: line-through;
 }
-.sale-text-price{
+.sale-text-price {
   color: var(--Font-Color-2);
 }
-.sale-text-perceentage{
+.sale-text-perceentage {
   color: var(--green-success);
 }
-.grocery-banner-2{
+.grocery-banner-2 {
   background-image: url(../imgs/HomeBanner2.png);
   background-position: 10% 50%;
 }
-.grocery-banner-2-p{
+.grocery-banner-2-p {
   font-size: 32px;
 }
-.subscribe > div{
+.subscribe > div {
   background: url(../imgs/pattern.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.selfcare{
-  color: #BEBD9B;
+.selfcare {
+  color: #bebd9b;
 }
-.news-letter{
+.news-letter {
   color: rgba(255, 163, 163, 1);
 }
-.payment-methods{
+.payment-methods {
   margin-top: 32px;
   position: relative;
 }
-.payment-methods::before{
-  content: '';
+.payment-methods::before {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #B3C9D0;
+  background-color: #b3c9d0;
   width: 30px;
   height: 2px;
 }
 .copy-right {
   background-color: rgba(179, 201, 208, 0.15);
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 /* End Home */
+
+/* Start Login */
+.login-logo{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+a {
+  text-decoration: none;
+}
+.dropdown-menu{
+  min-width: fit-content !important;
+  width: fit-content;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.btn.show, .dropdown-toggle:focus {
+  border: 0;
+  outline: none;
+}
+.dropdown-menu li{
+  text-align: center !important;
+}
+.login-form {
+  background: url(../imgs/login-bg.png) rgba(241, 248, 251, 0.8);
+  background-repeat: no-repeat;
+}
+.input {
+  border-bottom: 1.5px solid rgba(179, 201, 208, 0.6);
+}
+.input > input {
+  border: 0;
+  background-color: transparent;
+}
+.input > input:focus {
+  border: 0;
+  outline: 0;
+}
+a.forget-password {
+  background: -webkit-linear-gradient(
+    135deg,
+    #2868a3 0%,
+    #3f91bd 39.06%,
+    #61cee5 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login-btn {
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
+  cursor: pointer;
+}
+.login-btn-text {
+  color: var(--White);
+  transition: 0.3s ease;
+}
+.login-btn:hover {
+  transform: translateY(-7px);
+  background: var(--White);
+  box-shadow: 0px 36px 56px 0px rgba(24, 45, 65, 0.1);
+}
+.login-btn:hover .login-btn-text {
+  /* color: red; */
+  background: -webkit-linear-gradient(
+    135deg,
+    #2868a3 0%,
+    #3f91bd 39.06%,
+    #61cee5 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login-with-google-facebook, .signup-with-google-facebook {
+  border: 1px solid rgba(179, 201, 208, 0.5);
+  cursor: pointer;
+}
+.login-with-google-facebook .google-icon {
+  position: absolute;
+  left: 20px;
+}
+/* End Login */
+
+/* Start Sign Up */
+.signup{
+  background: url(../imgs/signup-bg.png);
+}
+.signup-img{
+  background: url(../imgs/signup-img-bg.png);
+}
+/* End Sign Up */
+
+/* Start Verification */
+.forgetpassword-img{
+  background: url(../imgs/verification-bg.png);
+  background-repeat: no-repeat;
+}
+/* End Verification */
+
+/* Start Otp */
+.otp input[type="number"] {
+  width: 74px;
+  height: 50px;
+}
+.form-control{
+
+    color: var(--Font-Color-2) !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 1.5px solid rgba(179, 201, 208, 0.60) !important;
+    border-radius: 0 !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 1.5px solid var(--Font-Color-1, #182D41) !important;
+
+}
+/* End Otp */
