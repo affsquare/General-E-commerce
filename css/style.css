@@ -64,6 +64,9 @@ h6 {
 .fs-20 {
   font-size: 20px;
 }
+.fs-22 {
+  font-size: 22px;
+}
 .fs-24 {
   font-size: 24px;
 }
@@ -665,21 +668,25 @@ a.forget-password {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.login-btn {
+.login-btn,
+.product-details-addToCart-btn {
   transition: 0.3s ease-in-out;
   background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
   cursor: pointer;
 }
-.login-btn-text {
+.login-btn-text,
+.product-details-addToCart-btn-text {
   color: var(--White);
   transition: 0.3s ease;
 }
-.login-btn:hover {
+.login-btn:hover,
+.product-details-addToCart-btn:hover {
   transform: translateY(-7px);
   background: var(--White);
   box-shadow: 0px 36px 56px 0px rgba(24, 45, 65, 0.1);
 }
-.login-btn:hover .login-btn-text {
+.login-btn:hover .login-btn-text,
+.product-details-addToCart-btn:hover .product-details-addToCart-btn-text {
   /* color: red; */
   background: -webkit-linear-gradient(
     135deg,
@@ -964,7 +971,50 @@ input[type="range"]::-moz-range-thumb {
   background-color: #f1f8fb;
   z-index: -1;
 }
-.top-brands{
 
-}
 /* End About Us */
+
+/* Start Product Details */
+.product-mini-img {
+  width: 100px;
+  height: 115px;
+  border: 1.5px solid rgba(179, 201, 208, 0.25);
+}
+.product-main-img {
+  padding: 107px 30px;
+  border: 1.5px solid rgba(179, 201, 208, 0.25);
+}
+.produst-details-methods {
+  height: 50px;
+  border: 1px solid rgba(179, 201, 208, 0.5);
+}
+.product-details-similarProducts {
+  background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.product-varient {
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(179, 201, 208, 0.5);
+  width: 90px;
+  text-align: center;
+  padding: 15px 0;
+  color: var(--Font-Color-2);
+}
+.form-select {
+  width: 80px;
+  padding: 10px 0 10px 30px;
+  font-size: 18px;
+  border-radius: 0;
+}
+.form-select:focus {
+  outline: none;
+  border-color: rgba(179, 201, 208, 0.5);
+  outline: 0;
+  box-shadow: none;
+}
+.add-to-wishlist {
+  border: 1px solid rgba(179, 201, 208, 0.5);
+}
+/* End Product Details */
