@@ -107,3 +107,37 @@ rangeInput.forEach((input) => {
   });
 });
 /* End Filter Price */
+
+/* Start Check Out Stepper */
+const checkNextBtn = document.getElementById("checkNextBtn");
+const checkBackBtn = document.getElementById("checkBackBtn");
+const personalInfo = document.getElementById("personalInfo");
+const orderReview = document.getElementById("orderReview");
+const placeOrderBtn = document.getElementById("placeOrderBtn");
+const voucherBtn = document.getElementById("voucherBtn");
+const placeOrder = document.getElementById("placeOrder");
+const cartBackBtn = document.getElementById("cartBackBtn");
+
+checkNextBtn.addEventListener("click", () => {
+  personalInfo.classList.add("d-none");
+  orderReview.classList.toggle("d-none");
+  checkNextBtn.classList.add("d-none");
+  checkBackBtn.classList.add("d-none");
+  placeOrderBtn.classList.toggle("d-none");
+  voucherBtn.classList.toggle("d-none");
+});
+
+const togleFunction = () => {
+  orderReview.classList.toggle("d-none");
+  placeOrder.classList.toggle("d-none");
+  placeOrderBtn.classList.toggle("d-none");
+  voucherBtn.classList.toggle("d-none");
+};
+
+placeOrderBtn.addEventListener("click", () => {
+  togleFunction();
+});
+cartBackBtn.addEventListener("click", () => {
+  togleFunction();
+});
+/* End Check Out Stepper */

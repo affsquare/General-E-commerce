@@ -1,1473 +1,1242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- bootstrap Link -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Google fonts Links -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>General-E-commerce</title>
-  </head>
-  <body>
-    <!-- Start Header -->
-    <header class="pt-4">
-        <div class="container">
-          <div class="row gx-4">
-            <div class="col-md-9">
-              <div class="d-flex">
-                <div class="me-4">
-                  <img src="../imgs/loginLogo.svg" alt="">
-                </div>
-                <div class="input w-100 ms-5">
-                  <label class="ps-3" for="search ">
-                    <img src="../imgs/search.svg" alt="" />
-                  </label>
-                  <input
-                    class="home-search font-color-2 ps-3 "
-                    id="search"
-                    type="search"
-                    placeholder="find out your lost.."
-                  />
-                </div>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- bootstrap Link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google fonts Links -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>General-E-commerce</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header class="pt-4">
+    <div class="container">
+      <div class="row gx-4">
+        <div class="col-md-9">
+          <div class="d-flex">
+            <div class="me-4">
+              <img src="../imgs/loginLogo.svg" alt="">
             </div>
-            <div class="col-md-3">
-              <div class="d-flex justify-content-between">
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle text-uppercase font-color-2"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      class="me-1"
-                      id="langFlag"
-                      src="../imgs/united-kingdom.svg"
-                      alt=""
-                    />
-                    English
-                  </button>
-                  <ul id="mainUl" class="dropdown-menu">
-                    <li>
-                      <img
-                        class="w-100 px-3 py-2"
-                        value="ar"
-                        src="../imgs/saudi-arabia.png"
-                        alt=""
-                        role="button"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        class="px-3 py-2"
-                        value="en"
-                        src="../imgs/united-kingdom.svg"
-                        alt=""
-                        role="button"
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <div class="home-signin  position-relative d-flex justify-content-between align-items-center">
-                  <a class=" d-flex align-items-center text-uppercase font-color-2" href="/authentication/login.html">
-                    <img src="../imgs/user.svg" alt="" />
-                  <div class=" ms-2" >sign in</div>
+            <div class="input w-100 ms-5">
+              <label class="ps-3" for="search ">
+                <img src="../imgs/search.svg" alt="" />
+              </label>
+              <input class="home-search font-color-2 ps-3 " id="search" type="search"
+                placeholder="find out your lost.." />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex justify-content-between">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle text-uppercase font-color-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img class="me-1" id="langFlag" src="../imgs/united-kingdom.svg" alt="" />
+                English
+              </button>
+              <ul id="mainUl" class="dropdown-menu">
+                <li>
+                  <img class="w-100 px-3 py-2" value="ar" src="../imgs/saudi-arabia.png" alt="" role="button" />
+                </li>
+                <li>
+                  <img class="px-3 py-2" value="en" src="../imgs/united-kingdom.svg" alt="" role="button" />
+                </li>
+              </ul>
+            </div>
+            <div class="home-signin  position-relative d-flex justify-content-between align-items-center">
+              <a class=" d-flex align-items-center text-uppercase font-color-2" href="/authentication/login.html">
+                <img src="../imgs/user.svg" alt="" />
+                <div class=" ms-2">sign in</div>
               </a>
               <div id="cart-btn" class="ms-4 ps-3 pointer">
                 <img src="../imgs/cart.svg" alt="" />
               </div>
-                </div>
             </div>
           </div>
-          
         </div>
-      </header>
-  
-      <header id="allCategoriesHeader" class="all-categories mt-4 position-relative">
-        <div class="container position-relative d-flex justify-content-between align-items-center px-1">
-          <div id="expand-allCategories-header" class="ps-3 expand-allCategories-header text-uppercase font-color-1 fs-18 fw-medium">all categories</div>
-        <nav id="nav-pages" class="navbar navbar-expand-lg ">
-          <div class="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link pe-3 " aria-current="page" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 active" href="/shop.html">Shop all</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#">Clothes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#">Beauty</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#">furniture</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#">grocery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4" href="#">electronics</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ps-3" href="#">Kitchen</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <p class="mb-0">
-          <button id="nav-expanded-btn" class="border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <img src="../imgs/hamburger.svg" alt="">
+
+      </div>
+  </header>
+
+  <header id="allCategoriesHeader" class="all-categories mt-4 position-relative">
+    <div class="container position-relative d-flex justify-content-between align-items-center px-1">
+      <div id="expand-allCategories-header"
+        class="ps-3 expand-allCategories-header text-uppercase font-color-1 fs-18 fw-medium">all categories</div>
+      <nav id="nav-pages" class="navbar navbar-expand-lg ">
+        <div class="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </p>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link pe-3 " aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 active" href="/shop.html">Shop all</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">Clothes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">Beauty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">furniture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">grocery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#">electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-3" href="#">Kitchen</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p class="mb-0">
+        <button id="nav-expanded-btn" class="border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <img src="../imgs/hamburger.svg" alt="">
+        </button>
+      </p>
+    </div>
+
+    <!-- Cart -->
+    <div id="cart" class="p-3 d-none ">
+      <div class="cart-header d-flex align-items-center pb-3">
+        <div class="cart-header-img d-flex justify-content-center align-items-center rounded-circle">
+          <img src="../imgs/cart.svg" alt="">
+        </div>
+        <span class="fs-24 fw-semibold ms-3">Shopping Cart</span>
       </div>
-  
-      <!-- Cart -->
-      <div id="cart" class="p-3 d-none ">
-        <div class="cart-header d-flex align-items-center pb-3">
-          <div class="cart-header-img d-flex justify-content-center align-items-center rounded-circle">
-            <img src="../imgs/cart.svg" alt="">
+      <div class="cart-items">
+        <div class="cart-item mt-3 d-flex pb-3">
+          <div class="cart-item-img d-flex justify-content-center align-items-center">
+            <img class="w-80" src="../imgs/Electornics.png" alt="">
           </div>
-          <span class="fs-24 fw-semibold ms-3">Shopping Cart</span>
-        </div>
-        <div class="cart-items">
-          <div class="cart-item mt-3 d-flex pb-3">
-            <div class="cart-item-img d-flex justify-content-center align-items-center">
-              <img class="w-80" src="../imgs/Electornics.png" alt="">
+          <div class="mt-2 ms-3">
+            <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+            <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+            <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+            <div class="mt-3 d-flex align-items-center">
+              <span><img src="../imgs/minus.svg" alt=""></span><span
+                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
             </div>
-            <div class="mt-2 ms-3">
-              <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
-              <p class="font-color-2 mb-3">Product Specs, example Grey</p>
-              <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
-              <div class="mt-3 d-flex align-items-center">
-                <span><img src="../imgs/minus.svg" alt=""></span><span class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="cart-item mt-3 d-flex pb-3">
-            <div class="cart-item-img d-flex justify-content-center align-items-center">
-              <img class="w-80" src="../imgs/Electornics.png" alt="">
-            </div>
-            <div class="mt-2 ms-3">
-              <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
-              <p class="font-color-2 mb-3">Product Specs, example Grey</p>
-              <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
-              <div class="mt-3 d-flex align-items-center">
-                <span><img src="../imgs/minus.svg" alt=""></span><span class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="cart-item mt-3 d-flex pb-3">
-            <div class="cart-item-img d-flex justify-content-center align-items-center">
-              <img class="w-80" src="../imgs/Electornics.png" alt="">
-            </div>
-            <div class="mt-2 ms-3">
-              <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
-              <p class="font-color-2 mb-3">Product Specs, example Grey</p>
-              <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
-              <div class="mt-3 d-flex align-items-center">
-                <span><img src="../imgs/minus.svg" alt=""></span><span class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
-              </div>
-              
-            </div>
+
           </div>
         </div>
-        <div class="cart-footer pt-3">
-          <div class="d-flex align-items-center justify-content-between px-2">
-            <span class="text-uppercase">Total amount</span>
-            <span class="fs-24 fw-semibold">EGP 20,380</span>
+        <div class="cart-item mt-3 d-flex pb-3">
+          <div class="cart-item-img d-flex justify-content-center align-items-center">
+            <img class="w-80" src="../imgs/Electornics.png" alt="">
           </div>
-          <div class="login-btn py-3 mt-4 d-flex align-items-center justify-content-center ">
-            <div class="login-btn-text">Checkout</div>
+          <div class="mt-2 ms-3">
+            <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+            <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+            <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+            <div class="mt-3 d-flex align-items-center">
+              <span><img src="../imgs/minus.svg" alt=""></span><span
+                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
+            </div>
+
           </div>
+        </div>
+        <div class="cart-item mt-3 d-flex pb-3">
+          <div class="cart-item-img d-flex justify-content-center align-items-center">
+            <img class="w-80" src="../imgs/Electornics.png" alt="">
+          </div>
+          <div class="mt-2 ms-3">
+            <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+            <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+            <span class="font-color-2 fs-19">EGP</span><span class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+            <div class="mt-3 d-flex align-items-center">
+              <span><img src="../imgs/minus.svg" alt=""></span><span
+                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg" alt=""></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer pt-3">
+        <div class="d-flex align-items-center justify-content-between px-2">
+          <span class="text-uppercase">Total amount</span>
+          <span class="fs-24 fw-semibold">EGP 20,380</span>
+        </div>
+        <a href="../checkOut.html" class="login-btn py-3 mt-4 d-flex align-items-center justify-content-center ">
+          <div class="login-btn-text">Checkout</div>
+        </a>
+        <div>
+          <a href="/cart.html" class="view-cart d-flex justify-content-center align-items-center mt-4 py-3 pointer">
+            <div class="me-3">
+              <img src="../imgs/blue-cart.svg" alt="">
+            </div>
+            <span class="blue-express">View Cart</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Expanded Nav -->
+  <div class="nav-allCategories  ">
+    <div class="collapse" id="collapseExample">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="nav-category position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img d-flex justify-content-center">
+                  <img class="w-75" src="../imgs/iPhone 14.svg" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold text-uppercase ps-2">ELECTRONICS</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  Mobile & Tablet
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  laptops
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  desktops
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  accessories
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  spare parts
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="nav-category position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img">
+                  <img class="w-100" src="../imgs/pngegg (2) 1.png" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold ps-3 text-uppercase">Beauty</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  selfcare
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  body
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  hair
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  men
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  perfume
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="nav-category position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img">
+                  <img class="w-100" src="../imgs/pngegg (1) 1.png" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold ps-3 text-uppercase">grocery</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  vegetables
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  fruits
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  dairy
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  bakery
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  meat
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="nav-category position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img">
+                  <img class="w-100" src="../imgs/pngegg (6) 1.png" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold text-uppercase ps-3">kitchen</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  fridges
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  cookers
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  kitchen
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  accessories
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  others
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="nav-category position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img">
+                  <img class="w-100" src="../imgs/pngegg (3) 1.png" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold ps-3 text-uppercase">furniture</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  living rooms
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  bed rooms
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  office rooms
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  desks & tables
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  chars & sofas
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class=" position-relative pt-3 pb-4">
+              <div class="d-flex align-items-center">
+                <div class="nav-img">
+                  <img class="w-100" src="../imgs/removal 1.png" alt="">
+                </div>
+                <div class="font-color-1 fw-semibold ps-2 text-uppercase">clothes</div>
+              </div>
+              <div class="mt-4 pt-3">
+                <div class="font-color-2 text-uppercase">
+                  tops wear
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  sweet pants
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  jackets , coats
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  winter wears
+                </div>
+                <div class="font-color-2 mt-4 text-uppercase">
+                  kids wear
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 nav-allCategories-hr">
+        <div class="d-flex justify-content-between align-items-center mb-3 pb-4">
+          <div class="text-uppercase">
+            <a class="pe-3 font-color-2" href="./shop.html">shop all</a>
+            <a class="px-3 font-color-2" href="./aboutUs.html">about us</a>
+            <a class="px-3 font-color-2" href="">contact us</a>
+            <a class="px-3 font-color-2" href="">sell with us</a>
+            <a class="ps-3 font-color-2" href="">CAREERS</a>
+          </div>
+          <div class="d-flex align-items-center ">
+            <div class="nav-support position-relative me-2 pe-4">
+              <img src="../imgs/customer-care.svg" alt="">
+              <span class="ms-2">support</span>
+            </div>
+            <div>
+              <img src="../imgs/call-calling.svg" alt="">
+              <span class="ms-2">19858</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <div class="container">
+    <div class="my-4 pt-1 fs-14">
+      <a class="me-2 font-color-2" href="/index.html">HOME</a><img src="../imgs/arrow-right.svg" alt=""> <span
+        class="blue-express  ms-2">SHOP ALL</span>
+    </div>
+
+    <!-- Start All Products -->
+    <section class="mt-3">
+      <div class="row">
+        <!-- beauty-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img beauty-img-overlay">
+                <img src="../imgs/pngegg (2) 1.png" alt="" />
+              </div>
+              <div class="overlay beauty"></div>
+            </div>
+            <div class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2">
+              beauty
+            </div>
+          </div>
+        </div>
+        <!-- kitchen-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img kitchen-img-overlay">
+                <img src="../imgs/pngegg (6) 1.png" alt="" />
+              </div>
+              <div class="overlay kitchen"></div>
+            </div>
+            <div class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2">
+              kitchen
+            </div>
+          </div>
+        </div>
+        <!-- grocery-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img grocery-img-overlay">
+                <img src="../imgs/pngegg (1) 1.png" alt="" />
+              </div>
+              <div class="overlay grocery"></div>
+            </div>
+            <div class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2">
+              grocery
+            </div>
+          </div>
+        </div>
+        <!-- furniture-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img">
+                <img src="../imgs/pngegg (3) 1.png" alt="" />
+              </div>
+              <div class="overlay furniture"></div>
+            </div>
+            <div class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2">
+              furniture
+            </div>
+          </div>
+        </div>
+        <!-- clothes-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img">
+                <img src="../imgs/removal 1.png" alt="" />
+              </div>
+              <div class="overlay clothe"></div>
+            </div>
+            <div class="beauty-text mt-2 fw-semibold text-center text-uppercase fs-14 font-color-2">
+              clothes
+            </div>
+          </div>
+        </div>
+        <!-- electronics-products -->
+        <div class="col-md-2">
+          <div class="all-products">
+            <div class="all-Products-crds d-flex justify-content-center align-items-center position-relative">
+              <div class="all-Products-cards-img">
+                <img src="../imgs/iPhone 14.svg" alt="" />
+              </div>
+              <div class="overlay electronics"></div>
+            </div>
+            <div class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2">
+              electronics
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End All Products -->
+
+    <!-- Start Shop Products -->
+    <section class="mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- CATEGORIES -->
+          <div class="fillter categories fs-14 fw-medium">
+            <h6 class="font-color-2 fw-normal text-uppercase">CATEGORIES</h6>
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="BEAUTY">
+                  <label class="ms-3 text-uppercase font-color-1" for="BEAUTY">BEAUTY</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="FURNITURE">
+                  <label class="ms-3 text-uppercase font-color-1" for="FURNITURE">FURNITURE</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="KITCHEN">
+                  <label class="ms-3 text-uppercase font-color-1" for="KITCHEN">KITCHEN</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="CLOTHES">
+                  <label class="ms-3 text-uppercase font-color-1" for="CLOTHES">CLOTHES</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="GROCERY">
+                  <label class="ms-3 text-uppercase font-color-1" for="GROCERY">GROCERY</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="ELECTRONICS">
+                  <label class="ms-3 text-uppercase font-color-1" for="ELECTRONICS">ELECTRONICS</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PRICE RANGE -->
+          <div class="fillter categories fs-14 fw-medium mt-4 pb-3">
+            <h6 class="font-color-2 fw-normal text-uppercase">PRICE RANGE</h6>
+            <div class="price-input my-4 pb-2">
+              <div class="field">
+                <span class="font-color-2 text-uppercase">From</span>
+                <input type="number" class="input-min font-color-1 mt-2" value="100">
+              </div>
+              <div class="field ms-4">
+                <span class="font-color-2 text-uppercase">To</span>
+                <input type="number" class="input-max font-color-1 mt-2" value="900">
+              </div>
+            </div>
+            <div class="mb-3 px-1">
+              <div class="slider ">
+                <div class="progress"></div>
+              </div>
+              <div class="range-input">
+                <input type="range" class="range-min" min="0" max="1000" value="100" step="10">
+                <input type="range" class="range-max" min="0" max="1000" value="900" step="10">
+              </div>
+            </div>
+
+          </div>
+          <!-- TYPE -->
+          <div class="fillter type mt-4 fs-14 fw-medium">
+            <h6 class="font-color-2 fw-normal text-uppercase">TYPE</h6>
+            <div class="row mt-4 ">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="LAPTOP">
+                  <label class="ms-3 text-uppercase font-color-1" for="LAPTOP">LAPTOP</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="DESKTOP">
+                  <label class="ms-3 text-uppercase font-color-1" for="DESKTOP">DESKTOP</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="MOBILE">
+                  <label class="ms-3 text-uppercase font-color-1" for="MOBILE">MOBILE</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="SPARE PARTS">
+                  <label class="ms-3 text-uppercase font-color-1" for="SPARE PARTS">SPARE PARTS</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="ACCESSORIES">
+                  <label class="ms-3 text-uppercase font-color-1" for="ACCESSORIES">ACCESSORIES</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BRAND -->
+          <div class="fillter type mt-4 fs-14 fw-medium">
+            <h6 class="font-color-2 fw-normal text-uppercase">BRAND</h6>
+            <div class="row mt-4 ">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="APPLE">
+                  <label class="ms-3 text-uppercase font-color-1" for="APPLE">APPLE</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="LENOVO">
+                  <label class="ms-3 text-uppercase font-color-1" for="LENOVO">LENOVO</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="XAOMI">
+                  <label class="ms-3 text-uppercase font-color-1" for="XAOMI">XAOMI</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="REALME">
+                  <label class="ms-3 text-uppercase font-color-1" for="REALME">REALME</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="OPPO">
+                  <label class="ms-3 text-uppercase font-color-1" for="OPPO">OPPO</label>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2 pt-2">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" name="" id="INFINIX">
+                  <label class="ms-3 text-uppercase font-color-1" for="INFINIX">INFINIX</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-9">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Color.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Electornics.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/SIlver.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Color.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Electornics.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/SIlver.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Color.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Electornics.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/SIlver.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Color.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/Electornics.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sale-card pb-3">
+                <div class="sale-card-img py-5 d-flex justify-content-center align-items-baseline">
+                  <img src="../imgs/SIlver.png" alt="" />
+                </div>
+                <div>
+                  <div class="d-flex px-3 justify-content-between align-items-center">
+                    <div class="blue-express">
+                      <img class="pe-2" src="../imgs/shipping-fast-solid-svgrepo-com 1.svg" alt="" />
+                      express
+                    </div>
+                    <div class="addToCart-btn d-flex align-items-center">
+                      <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                      <span class="addToCart-tex ps-2">Add to cart</span>
+                    </div>
+                  </div>
+                  <p class="px-3 mt-3 p2">
+                    Product Name will be here..Product Name will be here
+                  </p>
+                  <div class="ps-3">
+                    <span class="font-color-2">EGP</span>
+                    <span class="font-color-1 fw-bold fs-24">18,350</span>
+                  </div>
+                  <div class="mt-2 pe-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="px-3 sale-text">
+                        <span>EGP</span>
+                        <span class="sale-text-price">20,860</span>
+                      </div>
+                      <div class="sale-text-perceentage fw-bold">17% off</div>
+                    </div>
+                    <div class="font-color-2">
+                      <span>4.6</span>
+                      <img src="../imgs/star.svg" alt="" />
+                      <span>(7.6K)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- End Shop Products -->
+
+  <!-- Start Footer -->
+  <footer class="py-5 main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
           <div>
-            <a href="/cart.html" class="view-cart d-flex justify-content-center align-items-center mt-4 py-3 pointer">
+            <div>
+              <img src="../imgs/logo.svg" alt="" />
+            </div>
+            <div class="d-flex align-items-center mt-5 pt-4 font-color-2">
+              <div>
+                <img src="../imgs/customer-care-svgrepo-com 1.svg" alt="" />
+              </div>
+              <div class="ms-2">19858</div>
+            </div>
+            <div class="d-flex align-items-center mt-3 font-color-2">
+              <div>
+                <img src="../imgs/mail-svgrepo-com 1.svg" alt="" />
+              </div>
+              <div class="ms-2">username@gecomm.eg</div>
+            </div>
+            <div class="d-flex align-items-center mt-3 font-color-2">
+              <div>
+                <img src="../imgs/location-on-svgrepo-com 1.svg" alt="" />
+              </div>
+              <div class="ms-2">1street name , City , Countery</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <div class="font-color-2 mb-4">SITE MAP</div>
+            <div class="mb-4">ELECTRONICS</div>
+            <div class="mb-4">GROCERY</div>
+            <div class="">BEAUTY</div>
+            <div class="payment-methods font-color-2 text-uppercase">
+              payment methods
+            </div>
+            <div class="d-flex mt-4">
               <div class="me-3">
-                <img src="../imgs/blue-cart.svg" alt="">
+                <img src="../imgs/cash-money-svgrepo-com 1.svg" alt="" />
               </div>
-              <span class="blue-express">View Cart</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      </header>
-  
-      <!-- Expanded Nav -->
-      <div class="nav-allCategories  ">
-        <div class="collapse" id="collapseExample">
-          <div class="container pt-4">
-            <div class="row">
-              <div class="col-md-2">
-                <div class="nav-category position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img d-flex justify-content-center">
-                      <img class="w-75" src="../imgs/iPhone 14.svg" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold text-uppercase ps-2">ELECTRONICS</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      Mobile & Tablet
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      laptops 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      desktops 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      accessories 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      spare parts 
-                    </div>
-                  </div>
-                </div>
+              <div class="me-3">
+                <img src="../imgs/visa-svgrepo-com 1.png" alt="" />
               </div>
-              <div class="col-md-2">
-                <div class="nav-category position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img">
-                      <img class="w-100" src="../imgs/pngegg (2) 1.png" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold ps-3 text-uppercase">Beauty</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      selfcare
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      body 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      hair 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      men 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      perfume 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="nav-category position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img">
-                      <img class="w-100" src="../imgs/pngegg (1) 1.png" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold ps-3 text-uppercase">grocery</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      vegetables
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      fruits 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      dairy 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      bakery 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      meat 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="nav-category position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img">
-                      <img class="w-100" src="../imgs/pngegg (6) 1.png" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold text-uppercase ps-3">kitchen</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      fridges
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      cookers 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      kitchen 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      accessories 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      others 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="nav-category position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img">
-                      <img class="w-100" src="../imgs/pngegg (3) 1.png" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold ps-3 text-uppercase">furniture</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      living rooms
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      bed rooms 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      office rooms 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      desks & tables 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      chars & sofas 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class=" position-relative pt-3 pb-4">
-                  <div class="d-flex align-items-center">
-                    <div class="nav-img">
-                      <img class="w-100" src="../imgs/removal 1.png" alt="">
-                    </div>
-                    <div class="font-color-1 fw-semibold ps-2 text-uppercase">clothes</div>
-                  </div>
-                  <div class="mt-4 pt-3">
-                    <div class="font-color-2 text-uppercase">
-                      tops wear
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      sweet pants 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      jackets , coats 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      winter wears 
-                    </div>
-                    <div class="font-color-2 mt-4 text-uppercase">
-                      kids wear 
-                    </div>
-                  </div>
-                </div>
+              <div class="me-3">
+                <img src="../imgs/master-card-svgrepo-com 1.svg" alt="" />
               </div>
             </div>
-            <hr class="mt-4 nav-allCategories-hr">
-            <div class="d-flex justify-content-between align-items-center mb-3 pb-4">
-              <div class="text-uppercase">
-                <a class="pe-3 font-color-2" href="./shop.html">shop all</a>
-                <a class="px-3 font-color-2" href="./aboutUs.html">about us</a>
-                <a class="px-3 font-color-2" href="">contact us</a>
-                <a class="px-3 font-color-2" href="">sell with us</a>
-                <a class="ps-3 font-color-2" href="">CAREERS</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <div class="font-color-2 mb-4">BUSINESS WITH US</div>
+            <div class="mb-4">SELL ON OUR PLATFORM</div>
+            <div class="mb-4">SHIPPING PARTNER</div>
+            <div>EXPERTS RECRUITING</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <div class="font-color-2">BRANDS</div>
+            <div class="d-flex justify-content-between mt-4">
+              <div>ADIDAS</div>
+              <div>ADIDAS</div>
+              <div>GUCCI</div>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+              <div>ACTIVE</div>
+              <div>ACTIVE</div>
+              <div>DIESEL</div>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+              <div>Nike</div>
+              <div>Nike</div>
+              <div>DIESEL</div>
+            </div>
+            <div class="d-flex justify-content-center mt-5 pt-4">
+              <div class="pe-2">
+                <img src="../imgs/_Group_.svg" alt="" />
               </div>
-              <div class="d-flex align-items-center ">
-                <div class="nav-support position-relative me-2 pe-4">
-                  <img src="../imgs/customer-care.svg" alt="">
-                  <span class="ms-2">support</span>
-                </div>
-                <div>
-                  <img src="../imgs/call-calling.svg" alt="">
-                  <span class="ms-2">19858</span>
-                </div>
+              <div class="px-2">
+                <img src="../imgs/_Group_ (1).svg" alt="" />
+              </div>
+              <div class="px-2">
+                <img src="../imgs/_Group_ (2).svg" alt="" />
+              </div>
+              <div class="ps-2">
+                <img src="../imgs/_Group_ (3).svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Header -->
-
-      <div class="container">
-        <div class="my-4 pt-1 fs-14">
-          <a class="me-2 font-color-2" href="/index.html">HOME</a><img  src="../imgs/arrow-right.svg" alt=""> <span class="blue-express  ms-2">SHOP ALL</span>
-        </div>
-        
-        <!-- Start All Products -->
-        <section class="mt-3">
-          <div class="row">
-            <!-- beauty-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img beauty-img-overlay">
-                    <img src="../imgs/pngegg (2) 1.png" alt="" />
-                  </div>
-                  <div class="overlay beauty"></div>
-                </div>
-                <div
-                  class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2"
-                >
-                  beauty
-                </div>
-              </div>
-            </div>
-            <!-- kitchen-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img kitchen-img-overlay">
-                    <img src="../imgs/pngegg (6) 1.png" alt="" />
-                  </div>
-                  <div class="overlay kitchen"></div>
-                </div>
-                <div
-                  class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2"
-                >
-                kitchen
-                </div>
-              </div>
-            </div>
-            <!-- grocery-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img grocery-img-overlay">
-                    <img src="../imgs/pngegg (1) 1.png" alt="" />
-                  </div>
-                  <div class="overlay grocery"></div>
-                </div>
-                <div
-                  class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2"
-                >
-                  grocery
-                </div>
-              </div>
-            </div>
-            <!-- furniture-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img">
-                    <img src="../imgs/pngegg (3) 1.png" alt="" />
-                  </div>
-                  <div class="overlay furniture"></div>
-                </div>
-                <div
-                  class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2"
-                >
-                furniture
-                </div>
-              </div>
-            </div>
-            <!-- clothes-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img">
-                    <img src="../imgs/removal 1.png" alt="" />
-                  </div>
-                  <div class="overlay clothe"></div>
-                </div>
-                <div
-                  class="beauty-text mt-2 fw-semibold text-center text-uppercase fs-14 font-color-2"
-                >
-                  clothes
-                </div>
-              </div>
-            </div>
-            <!-- electronics-products -->
-            <div class="col-md-2">
-              <div class="all-products">
-                <div
-                  class="all-Products-crds d-flex justify-content-center align-items-center position-relative"
-                >
-                  <div class="all-Products-cards-img">
-                    <img src="../imgs/iPhone 14.svg" alt="" />
-                  </div>
-                  <div class="overlay electronics"></div>
-                </div>
-                <div
-                  class="beauty-text fw-semibold mt-2 text-center text-uppercase fs-14 font-color-2"
-                >
-                  electronics
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End All Products -->
-
-        <!-- Start Shop Products -->
-        <section class="mt-5">
-          <div class="row">
-            <div class="col-md-3">
-              <!-- CATEGORIES -->
-              <div class="fillter categories fs-14 fw-medium">
-                <h6 class="font-color-2 fw-normal text-uppercase">CATEGORIES</h6>
-                <div class="row mt-4">
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="BEAUTY">
-                      <label class="ms-3 text-uppercase font-color-1" for="BEAUTY">BEAUTY</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="FURNITURE">
-                      <label class="ms-3 text-uppercase font-color-1" for="FURNITURE">FURNITURE</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="KITCHEN">
-                      <label class="ms-3 text-uppercase font-color-1" for="KITCHEN">KITCHEN</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="CLOTHES">
-                      <label class="ms-3 text-uppercase font-color-1" for="CLOTHES">CLOTHES</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="GROCERY">
-                      <label class="ms-3 text-uppercase font-color-1" for="GROCERY">GROCERY</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="ELECTRONICS">
-                      <label class="ms-3 text-uppercase font-color-1" for="ELECTRONICS">ELECTRONICS</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PRICE RANGE -->
-              <div class="fillter categories fs-14 fw-medium mt-4 pb-3">
-                <h6 class="font-color-2 fw-normal text-uppercase">PRICE RANGE</h6>
-                <div class="price-input my-4 pb-2">
-                  <div class="field">
-                    <span class="font-color-2 text-uppercase">From</span>
-                    <input type="number" class="input-min font-color-1 mt-2" value="100">
-                  </div>
-                  <div class="field ms-4">
-                    <span class="font-color-2 text-uppercase">To</span>
-                    <input type="number" class="input-max font-color-1 mt-2" value="900">
-                  </div>
-                </div>
-                <div class="mb-3 px-1">
-                  <div class="slider ">
-                    <div class="progress"></div>
-                  </div>
-                  <div class="range-input">
-                    <input type="range" class="range-min" min="0" max="1000" value="100" step="10">
-                    <input type="range" class="range-max" min="0" max="1000" value="900" step="10">
-                  </div>
-                </div>
-                
-              </div>
-              <!-- TYPE -->
-              <div class="fillter type mt-4 fs-14 fw-medium">
-                <h6 class="font-color-2 fw-normal text-uppercase">TYPE</h6>
-                <div class="row mt-4 ">
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="LAPTOP">
-                      <label class="ms-3 text-uppercase font-color-1" for="LAPTOP">LAPTOP</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="DESKTOP">
-                      <label class="ms-3 text-uppercase font-color-1" for="DESKTOP">DESKTOP</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="MOBILE">
-                      <label class="ms-3 text-uppercase font-color-1" for="MOBILE">MOBILE</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="SPARE PARTS">
-                      <label class="ms-3 text-uppercase font-color-1" for="SPARE PARTS">SPARE PARTS</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="ACCESSORIES">
-                      <label class="ms-3 text-uppercase font-color-1" for="ACCESSORIES">ACCESSORIES</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-              <!-- BRAND -->
-              <div class="fillter type mt-4 fs-14 fw-medium">
-                <h6 class="font-color-2 fw-normal text-uppercase">BRAND</h6>
-                <div class="row mt-4 ">
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="APPLE">
-                      <label class="ms-3 text-uppercase font-color-1" for="APPLE">APPLE</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="LENOVO">
-                      <label class="ms-3 text-uppercase font-color-1" for="LENOVO">LENOVO</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="XAOMI">
-                      <label class="ms-3 text-uppercase font-color-1" for="XAOMI">XAOMI</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="REALME">
-                      <label class="ms-3 text-uppercase font-color-1" for="REALME">REALME</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="OPPO">
-                      <label class="ms-3 text-uppercase font-color-1" for="OPPO">OPPO</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mt-2 pt-2">
-                    <div class="d-flex align-items-center">
-                      <input type="checkbox" name="" id="INFINIX">
-                      <label class="ms-3 text-uppercase font-color-1" for="INFINIX">INFINIX</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-            <div class="col-md-9">
-              <div class="row gy-4">
-                <div class="col-md-4">
-            <div class="sale-card pb-3">
-              <div
-                class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-              >
-                <img src="../imgs/Color.png" alt="" />
-              </div>
-              <div>
-                <div
-                  class="d-flex px-3 justify-content-between align-items-center"
-                >
-                  <div class="blue-express">
-                    <img
-                      class="pe-2"
-                      src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                      alt=""
-                    />
-                    express
-                  </div>
-                  <div class="addToCart-btn d-flex align-items-center">
-                    <img
-                      class="fs-12 font-color-2"
-                      src="../imgs/cart.svg"
-                      alt=""
-                    />
-                    <span class="addToCart-tex ps-2">Add to cart</span>
-                  </div>
-                </div>
-                <p class="px-3 mt-3 p2">
-                  Product Name will be here..Product Name will be here
-                </p>
-                <div class="ps-3">
-                  <span class="font-color-2">EGP</span>
-                  <span class="font-color-1 fw-bold fs-24">18,350</span>
-                </div>
-                <div
-                  class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                >
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="px-3 sale-text">
-                      <span>EGP</span>
-                      <span class="sale-text-price">20,860</span>
-                    </div>
-                    <div class="sale-text-perceentage fw-bold">17% off</div>
-                  </div>
-                  <div class="font-color-2">
-                    <span>4.6</span>
-                    <img src="../imgs/star.svg" alt="" />
-                    <span>(7.6K)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/Electornics.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/SIlver.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-            <div class="sale-card pb-3">
-              <div
-                class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-              >
-                <img src="../imgs/Color.png" alt="" />
-              </div>
-              <div>
-                <div
-                  class="d-flex px-3 justify-content-between align-items-center"
-                >
-                  <div class="blue-express">
-                    <img
-                      class="pe-2"
-                      src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                      alt=""
-                    />
-                    express
-                  </div>
-                  <div class="addToCart-btn d-flex align-items-center">
-                    <img
-                      class="fs-12 font-color-2"
-                      src="../imgs/cart.svg"
-                      alt=""
-                    />
-                    <span class="addToCart-tex ps-2">Add to cart</span>
-                  </div>
-                </div>
-                <p class="px-3 mt-3 p2">
-                  Product Name will be here..Product Name will be here
-                </p>
-                <div class="ps-3">
-                  <span class="font-color-2">EGP</span>
-                  <span class="font-color-1 fw-bold fs-24">18,350</span>
-                </div>
-                <div
-                  class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                >
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="px-3 sale-text">
-                      <span>EGP</span>
-                      <span class="sale-text-price">20,860</span>
-                    </div>
-                    <div class="sale-text-perceentage fw-bold">17% off</div>
-                  </div>
-                  <div class="font-color-2">
-                    <span>4.6</span>
-                    <img src="../imgs/star.svg" alt="" />
-                    <span>(7.6K)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/Electornics.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/SIlver.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-            <div class="sale-card pb-3">
-              <div
-                class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-              >
-                <img src="../imgs/Color.png" alt="" />
-              </div>
-              <div>
-                <div
-                  class="d-flex px-3 justify-content-between align-items-center"
-                >
-                  <div class="blue-express">
-                    <img
-                      class="pe-2"
-                      src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                      alt=""
-                    />
-                    express
-                  </div>
-                  <div class="addToCart-btn d-flex align-items-center">
-                    <img
-                      class="fs-12 font-color-2"
-                      src="../imgs/cart.svg"
-                      alt=""
-                    />
-                    <span class="addToCart-tex ps-2">Add to cart</span>
-                  </div>
-                </div>
-                <p class="px-3 mt-3 p2">
-                  Product Name will be here..Product Name will be here
-                </p>
-                <div class="ps-3">
-                  <span class="font-color-2">EGP</span>
-                  <span class="font-color-1 fw-bold fs-24">18,350</span>
-                </div>
-                <div
-                  class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                >
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="px-3 sale-text">
-                      <span>EGP</span>
-                      <span class="sale-text-price">20,860</span>
-                    </div>
-                    <div class="sale-text-perceentage fw-bold">17% off</div>
-                  </div>
-                  <div class="font-color-2">
-                    <span>4.6</span>
-                    <img src="../imgs/star.svg" alt="" />
-                    <span>(7.6K)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/Electornics.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/SIlver.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-            <div class="sale-card pb-3">
-              <div
-                class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-              >
-                <img src="../imgs/Color.png" alt="" />
-              </div>
-              <div>
-                <div
-                  class="d-flex px-3 justify-content-between align-items-center"
-                >
-                  <div class="blue-express">
-                    <img
-                      class="pe-2"
-                      src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                      alt=""
-                    />
-                    express
-                  </div>
-                  <div class="addToCart-btn d-flex align-items-center">
-                    <img
-                      class="fs-12 font-color-2"
-                      src="../imgs/cart.svg"
-                      alt=""
-                    />
-                    <span class="addToCart-tex ps-2">Add to cart</span>
-                  </div>
-                </div>
-                <p class="px-3 mt-3 p2">
-                  Product Name will be here..Product Name will be here
-                </p>
-                <div class="ps-3">
-                  <span class="font-color-2">EGP</span>
-                  <span class="font-color-1 fw-bold fs-24">18,350</span>
-                </div>
-                <div
-                  class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                >
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="px-3 sale-text">
-                      <span>EGP</span>
-                      <span class="sale-text-price">20,860</span>
-                    </div>
-                    <div class="sale-text-perceentage fw-bold">17% off</div>
-                  </div>
-                  <div class="font-color-2">
-                    <span>4.6</span>
-                    <img src="../imgs/star.svg" alt="" />
-                    <span>(7.6K)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/Electornics.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="sale-card pb-3">
-                    <div
-                      class="sale-card-img py-5 d-flex justify-content-center align-items-baseline"
-                    >
-                      <img src="../imgs/SIlver.png" alt="" />
-                    </div>
-                    <div>
-                      <div
-                        class="d-flex px-3 justify-content-between align-items-center"
-                      >
-                        <div class="blue-express">
-                          <img
-                            class="pe-2"
-                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
-                            alt=""
-                          />
-                          express
-                        </div>
-                        <div class="addToCart-btn d-flex align-items-center">
-                          <img
-                            class="fs-12 font-color-2"
-                            src="../imgs/cart.svg"
-                            alt=""
-                          />
-                          <span class="addToCart-tex ps-2">Add to cart</span>
-                        </div>
-                      </div>
-                      <p class="px-3 mt-3 p2">
-                        Product Name will be here..Product Name will be here
-                      </p>
-                      <div class="ps-3">
-                        <span class="font-color-2">EGP</span>
-                        <span class="font-color-1 fw-bold fs-24">18,350</span>
-                      </div>
-                      <div
-                        class="mt-2 pe-3 d-flex align-items-center justify-content-between"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="px-3 sale-text">
-                            <span>EGP</span>
-                            <span class="sale-text-price">20,860</span>
-                          </div>
-                          <div class="sale-text-perceentage fw-bold">17% off</div>
-                        </div>
-                        <div class="font-color-2">
-                          <span>4.6</span>
-                          <img src="../imgs/star.svg" alt="" />
-                          <span>(7.6K)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </section>
-        <!-- End Shop Products -->
-
-        <!-- Start Footer -->
-        <footer class="py-5 main-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div>
-                  <div>
-                    <img src="../imgs/logo.svg" alt="" />
-                  </div>
-                  <div class="d-flex align-items-center mt-5 pt-4 font-color-2">
-                    <div>
-                      <img src="../imgs/customer-care-svgrepo-com 1.svg" alt="" />
-                    </div>
-                    <div class="ms-2">19858</div>
-                  </div>
-                  <div class="d-flex align-items-center mt-3 font-color-2">
-                    <div>
-                      <img src="../imgs/mail-svgrepo-com 1.svg" alt="" />
-                    </div>
-                    <div class="ms-2">username@gecomm.eg</div>
-                  </div>
-                  <div class="d-flex align-items-center mt-3 font-color-2">
-                    <div>
-                      <img src="../imgs/location-on-svgrepo-com 1.svg" alt="" />
-                    </div>
-                    <div class="ms-2">1street name , City , Countery</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div>
-                  <div class="font-color-2 mb-4">SITE MAP</div>
-                  <div class="mb-4">ELECTRONICS</div>
-                  <div class="mb-4">GROCERY</div>
-                  <div class="">BEAUTY</div>
-                  <div class="payment-methods font-color-2 text-uppercase">
-                    payment methods
-                  </div>
-                  <div class="d-flex mt-4">
-                    <div class="me-3">
-                      <img src="../imgs/cash-money-svgrepo-com 1.svg" alt="" />
-                    </div>
-                    <div class="me-3">
-                      <img src="../imgs/visa-svgrepo-com 1.png" alt="" />
-                    </div>
-                    <div class="me-3">
-                      <img src="../imgs/master-card-svgrepo-com 1.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div>
-                  <div class="font-color-2 mb-4">BUSINESS WITH US</div>
-                  <div class="mb-4">SELL ON OUR PLATFORM</div>
-                  <div class="mb-4">SHIPPING PARTNER</div>
-                  <div>EXPERTS RECRUITING</div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div>
-                  <div class="font-color-2">BRANDS</div>
-                  <div class="d-flex justify-content-between mt-4">
-                    <div>ADIDAS</div>
-                    <div>ADIDAS</div>
-                    <div>GUCCI</div>
-                  </div>
-                  <div class="d-flex justify-content-between mt-4">
-                    <div>ACTIVE</div>
-                    <div>ACTIVE</div>
-                    <div>DIESEL</div>
-                  </div>
-                  <div class="d-flex justify-content-between mt-4">
-                    <div>Nike</div>
-                    <div>Nike</div>
-                    <div>DIESEL</div>
-                  </div>
-                  <div class="d-flex justify-content-center mt-5 pt-4">
-                    <div class="pe-2">
-                      <img src="../imgs/_Group_.svg" alt="" />
-                    </div>
-                    <div class="px-2">
-                      <img src="../imgs/_Group_ (1).svg" alt="" />
-                    </div>
-                    <div class="px-2">
-                      <img src="../imgs/_Group_ (2).svg" alt="" />
-                    </div>
-                    <div class="ps-2">
-                      <img src="../imgs/_Group_ (3).svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <footer class="copy-right mt-5 px-5 py-4">
-          <div class="d-flex justify-content-between">
-            <div>
-              ©2022 <span class="font-color-1">Company</span> ® All rights reserved.
-            </div>
-            <div>
-              Proudly powered by <span class="font-color-1">AFFSQUARE.</span>
-            </div>
-          </div>
-        </footer>
-        <!-- End Footer -->
+    </div>
+  </footer>
+  <footer class="copy-right mt-5 px-5 py-4">
+    <div class="d-flex justify-content-between">
+      <div>
+        ©2022 <span class="font-color-1">Company</span> ® All rights reserved.
       </div>
+      <div>
+        Proudly powered by <span class="font-color-1">AFFSQUARE.</span>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  </div>
 
 
-    <!-- Scripts -->
+  <!-- Scripts -->
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
