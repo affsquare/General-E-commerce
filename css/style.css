@@ -1131,3 +1131,44 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: unset !important;
 }
 /* End CheckOut */
+
+/* Start Contact US */
+.contactus-header {
+  height: 180px;
+  background: url(../imgs/contactusHeader.png),
+    linear-gradient(263deg, #f1f8fb 0%, rgba(241, 248, 251, 0) 55.67%);
+  background-repeat: no-repeat;
+}
+.input textarea {
+  border: 0;
+}
+.input textarea:focus {
+  outline: 0;
+}
+.send-message-btn {
+  height: 48px;
+  /* width: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
+  color: var(--White);
+  transition: transform 0.5s;
+}
+.send-message-btn:hover {
+  background: var(--White);
+  transform: translateY(-10px);
+  box-shadow: 0px 36px 56px 0px rgba(24, 45, 65, 0.1);
+}
+.send-message-btn:hover .send-message-text {
+  background: -webkit-linear-gradient(
+    135deg,
+    #2868a3 0%,
+    #3f91bd 39.06%,
+    #61cee5 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* End Contact US */
