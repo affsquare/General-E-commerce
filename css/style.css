@@ -1258,3 +1258,18 @@ textarea {
   padding-right: 24px;
 }
 /* End Shipping Partner */
+
+/* Start Experts Recruiting */
+.expertsRecruiting-header {
+  height: 180px;
+  background: url(../imgs/expertsRecruitingHeader.png),
+    linear-gradient(263deg, #f1f8fb 0%, rgba(241, 248, 251, 0) 55.67%);
+  background-repeat: no-repeat;
+}
+.shippingPartner-img-logo {
+  padding-right: 24px;
+}
+.expertsRecruiting .send-message-btn {
+  padding: 25px 0;
+}
+/* End Experts Recruiting */
