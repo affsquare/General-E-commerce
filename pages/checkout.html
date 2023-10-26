@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- bootstrap Link -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- CSS Link -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Google fonts Links -->
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
@@ -87,10 +87,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link pe-3" aria-current="page" href="/index.html">Home</a>
+                                <a class="nav-link pe-3 " aria-current="page" href="../pages/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-4" href="/shop.html">Shop all</a>
+                                <a class="nav-link px-4 active" href="../pages/shop.html">Shop all</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-4" href="#">Clothes</a>
@@ -188,12 +188,12 @@
                     <span class="text-uppercase">Total amount</span>
                     <span class="fs-24 fw-semibold">EGP 20,380</span>
                 </div>
-                <a href="../checkOut.html"
+                <a href="../pages/checkout.html"
                     class="login-btn py-3 mt-4 d-flex align-items-center justify-content-center ">
                     <div class="login-btn-text">Checkout</div>
                 </a>
                 <div>
-                    <a href="/cart.html"
+                    <a href="../pages/cart.html"
                         class="view-cart d-flex justify-content-center align-items-center mt-4 py-3 pointer">
                         <div class="me-3">
                             <img src="../imgs/blue-cart.svg" alt="">
@@ -377,11 +377,11 @@
                 <hr class="mt-4 nav-allCategories-hr">
                 <div class="d-flex justify-content-between align-items-center  mb-3 pb-4">
                     <div class="text-uppercase">
-                        <a class="pe-3 font-color-2" href="./shop.html">shop all</a>
-                        <a class="px-3 font-color-2" href="./aboutUs.html">about us</a>
-                        <a class="px-3 font-color-2" href="./contactus.html">contact us</a>
-                        <a class="px-3 font-color-2" href="./sellWithUs.html">sell with us</a>
-                        <a class="ps-3 font-color-2" href="./careers.html">CAREERS</a>
+                        <a class="pe-3 font-color-2" href="../pages/shop.html">shop all</a>
+                        <a class="px-3 font-color-2" href="../pages/aboutUs.html">about us</a>
+                        <a class="px-3 font-color-2" href="../pages/contactus.html">contact us</a>
+                        <a class="px-3 font-color-2" href="../pages/sellWithUs.html">sell with us</a>
+                        <a class="ps-3 font-color-2" href="../pages/careers.html">CAREERS</a>
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="nav-support position-relative me-2 pe-4">
@@ -399,94 +399,398 @@
     </div>
     <!-- End Header -->
 
-    <!-- Start Shipping Partner -->
-    <div class="container pb-3">
+    <!-- Start CheckOut -->
+    <div class="container">
         <div class="my-4 pt-1 fs-14">
-            <a class="me-2 font-color-2" href="/index.html">HOME</a><img src="../imgs/arrow-right.svg" alt=""> <span
-                class="blue-express  ms-2">SHIPPING PARTNER</span>
+            <a class="me-2 font-color-2" href="../pages/index.html">HOME</a><img src="../imgs/arrow-right.svg" alt="">
+            <a class="me-2 font-color-2" href="../pages/shop.html">SHOP ALL</a><img src="../imgs/arrow-right.svg"
+                alt="">
+            <a class="me-2 font-color-2" href="../pages/cart.html">CART</a><img src="../imgs/arrow-right.svg" alt="">
+            <span class="blue-express  ms-2">CHECKOUT</span>
         </div>
-        <!-- Start Shipping Partner Header -->
-        <div class="shippingPartner-header mt-4 "></div>
-        <section class="mt-5 shippingPartner">
+        <div class="checkOut  p-5">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="position-relative">
-                        <img class="w-100" src="../imgs/shippingPartner-img.png" alt="">
-                        <div class="shippingPartner-img-logo">
-                            <img class="w-100" src="../imgs/imgLogo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <h4 class="font-color-1 fw-bold text-uppercase">Grow your business</h4>
-                        <p class="p2 lh-base mt-3">Sell your products through Gecommerce to expand your sales..</p>
-                        <div class="row mt-4">
-                            <!-- Business name -->
-                            <div class="col-md-12">
+                <div class="col-md-8">
+                    <!-- Personal Info -->
+                    <div id="personalInfo" class="personalInfo ">
+                        <h6 class="font-color-1 fw-semibold mb-4 text-uppercase">Personal info.</h6>
+                        <div class="row">
+                            <!-- Full Name -->
+                            <div class="col-md-6">
                                 <div class="input d-flex align-items-center px-3 py-3">
-                                    <label for="businessName ">
-                                        <img src="../imgs/business.svg" alt="" />
+                                    <label for="fullName ">
+                                        <img src="../imgs/user.svg" alt="" />
                                     </label>
-                                    <input class="font-color-2 ps-3 w-100" id="businessName" type="text"
-                                        placeholder="Business name" />
+                                    <input class="font-color-2 ps-3 w-100" id="fullName" type="text"
+                                        placeholder="Fullname" />
                                 </div>
                             </div>
-                            <!-- Business mail -->
-                            <div class="col-md-6 mt-4">
+                            <!-- Email -->
+                            <div class="col-md-6">
                                 <div class="input d-flex align-items-center px-3 py-3">
-                                    <label for="businessEmail ">
+                                    <label for="email ">
                                         <img src="../imgs/email.svg" alt="" />
                                     </label>
-                                    <input class="font-color-2 ps-3 w-100" id="businessEmail" type="email"
-                                        placeholder="Business Mail" />
+                                    <input class="font-color-2 ps-3 w-100" id="email" type="email"
+                                        placeholder="Email" />
                                 </div>
                             </div>
-                            <!-- Contact Number -->
+                            <!-- Phone -->
                             <div class="col-md-6 mt-4">
                                 <div class="input d-flex align-items-center px-3 py-3">
-                                    <label for="contactnumber ">
-                                        <img src="../imgs/contact.svg" alt="" />
+                                    <label for="phonenumber ">
+                                        <img src="../imgs/mobile.svg" alt="" />
                                     </label>
-                                    <input class="font-color-2 ps-3 w-100" id="contactnumber" type="number"
-                                        placeholder="Contact Number" />
+                                    <input class="font-color-2 ps-3 w-100" id="phonenumber" type="number"
+                                        placeholder="Phone Number" />
                                 </div>
                             </div>
-                            <!-- Tax Record -->
-                            <div class="col-md-12 mt-4">
+                            <!-- Birthdate -->
+                            <div class="col-md-6 mt-4">
                                 <div class="input d-flex align-items-center px-3 py-3">
-                                    <label for="taxRecord ">
-                                        <img src="../imgs/text.svg" alt="" />
+                                    <label for="phonenumber ">
+                                        <img src="../imgs/cake.svg" alt="" />
                                     </label>
-                                    <input class="font-color-2 ps-3 w-100" id="taxRecord" type="text"
-                                        placeholder="Tax Record" />
+                                    <input class="font-color-2 ps-3 w-100" id="phonenumber" type="text"
+                                        placeholder="Birthdate" onfocus="(this.type='date')"
+                                        onblur="(this.type='text')" />
                                 </div>
                             </div>
-                            <!-- Business Description -->
-                            <div class="col-md-12 mt-4">
-                                <div class="input d-flex align-items-center px-3 py-3">
-                                    <textarea class="w-100" name="businessDescription"
-                                        placeholder="More Description About Your Business.." id="businessDescription"
-                                        cols="30" rows="2"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-5">
-                                <div class="send-message-btn ">
-                                    <div class="send-message-text">
-                                        APPLY
+                        </div>
+                        <!-- Payment Method -->
+                        <h6 class="font-color-1 fw-semibold mt-4 pt-3 text-uppercase">payment method</h6>
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+                                <div class="payment-method d-flex align-items-center  ps-3 bg-white">
+                                    <div class="payment-method-img ">
+                                        <img src="../imgs/card.svg" alt="">
                                     </div>
+                                    <span class="font-color-2 ">Card</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="payment-method d-flex align-items-center  ps-3 bg-white">
+                                    <div class="payment-method-img">
+                                        <img src="../imgs/wallet.svg" alt="">
+                                    </div>
+                                    <span class="font-color-2 ">Wallet</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="payment-method d-flex align-items-center  ps-3 bg-white">
+                                    <div class="payment-method-img">
+                                        <img src="../imgs/cod.svg" alt="">
+                                    </div>
+                                    <span class="font-color-2 ">COD</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="payment-method d-flex align-items-center  ps-3 bg-white">
+                                    <div class="payment-method-img">
+                                        <img src="../imgs/paypal.svg" alt="">
+                                    </div>
+                                    <span class="font-color-2 ">Paypal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shipping Address -->
+                        <h6 class="font-color-1 fw-semibold mt-4 pt-3 text-uppercase">Shipping Address</h6>
+                        <div class="row">
+                            <!-- Country -->
+                            <div class="col-md-6">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="country">
+                                        <img src="../imgs/flag.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id="country" type="text"
+                                        placeholder="Countery" />
+                                </div>
+                            </div>
+                            <!-- City -->
+                            <div class="col-md-6">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="city">
+                                        <img src="../imgs/city.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id="city" type="text" placeholder="City" />
+                                </div>
+                            </div>
+                            <!-- Address Details -->
+                            <div class="col-md-12 mt-4">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="address">
+                                        <img src="../imgs/address.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id="address" type="text"
+                                        placeholder="Address Details" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        </section>
-    </div>
+                    <!-- Order Review -->
+                    <div id="orderReview" class="order-review d-none">
+                        <h6>Order review <span class="font-color-2">(3 items)</span></h6>
 
-    <!-- End Contactus -->
+                        <!-- Order Review Personal Info -->
+                        <h6 class="font-color-1 mt-4 pt-3 text-uppercase fs-14">Personal Info</h6>
+                        <div class="order-review-item d-flex justify-content-between align-items-center p-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="order-review-item-img">
+                                    <img src="../imgs/user.svg" alt="">
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1 font-color-1 fw-bold">Abdelaziz</h6>
+                                    <span class="font-color-1 fs-14">+201063751574</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-baseline pointer">
+                                <div>
+                                    <img src="../imgs/edit.svg" alt="">
+                                </div>
+                                <div class="fs-14 ms-1">Edit</div>
+                            </div>
+                        </div>
+
+                        <!-- Order Review Shipping Address -->
+                        <h6 class="font-color-1 mt-4 pt-3 text-uppercase fs-14">shipping address</h6>
+                        <div class="order-review-item d-flex justify-content-between align-items-center p-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="order-review-item-img">
+                                    <img src="../imgs/address.svg" alt="">
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1 font-color-1 fw-bold">Home Address</h6>
+                                    <span class="font-color-1 fs-14">here write address.. here write address - district
+                                        - city</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-baseline pointer">
+                                <div>
+                                    <img src="../imgs/edit.svg" alt="">
+                                </div>
+                                <div class="fs-14 ms-1">Edit</div>
+                            </div>
+                        </div>
+
+                        <!-- Order Review Payment Method -->
+                        <h6 class="font-color-1 mt-4 pt-3 text-uppercase fs-14">payment method</h6>
+                        <div class="order-review-item d-flex justify-content-between align-items-center p-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="order-review-item-img">
+                                    <img src="../imgs/card.svg" alt="">
+                                </div>
+                                <div class="ms-3 font-color-1">
+                                    <span class="me-5">Credit Card </span>
+                                    <span class=" ">End With <span class="fw-bold ms-2">6052</span> </span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-baseline pointer">
+                                <div>
+                                    <img src="../imgs/edit.svg" alt="">
+                                </div>
+                                <div class="fs-14 ms-1">Edit</div>
+                            </div>
+                        </div>
+
+                        <!--  Selected Items -->
+                        <h6 class="font-color-1 mt-4 pt-3 text-uppercase fs-14 pb-2">Selected items <span
+                                class="font-color-2">(4
+                                items)</span></h6>
+                        <div class="d-flex">
+                            <div class="selected-item position-relative mt-4">
+                                <img class="w-100" src="../imgs/Electornics.png" alt="">
+                                <span>1</span>
+                            </div>
+                            <div class="selected-item position-relative mt-4 ">
+                                <img class="w-100" src="../imgs/Clothes img 3.png" alt="">
+                                <span>1</span>
+                            </div>
+                            <div class="selected-item position-relative mt-4 ">
+                                <img class="w-100" src="../imgs/pngegg (22) 1.png" alt="">
+                                <span>1</span>
+                            </div>
+                            <div class="selected-item position-relative mt-4">
+                                <img class="w-100" src="../imgs/pngegg (28) 3.png" alt="">
+                                <span>1</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Place Order -->
+                    <div id="placeOrder" class="place-order d-none">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="visa-img h-100 d-flex justify-content-center align-items-start">
+                                    <img src="../imgs/visa.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="bg-white p-5">
+                                    <h5>Debit /Credit Card</h5>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input">
+                                                <input class="py-3 w-100" type="text" placeholder="Card Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="input mt-4">
+                                                <input class="py-3 w-100" type="text" placeholder="Name on Card">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input mt-4">
+                                                <input class="py-3 w-100" type="text" placeholder="Expiry Date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input mt-4">
+                                                <input class="py-3 w-100" type="text" placeholder="CVV">
+                                            </div>
+                                        </div>
+                                        <div class="form-check form-switch mt-4">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckChecked">
+                                            <label class="form-check-label font-color-2" for="flexSwitchCheckChecked">
+                                                save card data</label>
+                                        </div>
+                                        <div class="confirm-btn mt-4 py-3 text-center">
+                                            Confirm
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pay and Next -->
+                        <div class="mt-5 d-flex justify-content-between">
+                            <div id="cartBackBtn" class="check-back-btn">
+                                <div class="check-back-btn-text">
+                                    Back
+                                </div>
+                            </div>
+                            <div id="cartPayBtn" class="check-next-btn">
+                                <div class="check-next-btn-text">
+                                    Pay
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Back and Next -->
+                    <div class="mt-5 d-flex justify-content-between">
+                        <a id="checkBackBtn" href="../cart.html" class="check-back-btn">
+                            <div class="check-back-btn-text">
+                                Back
+                            </div>
+                        </a>
+                        <div id="checkNextBtn" class="check-next-btn">
+                            <div class="check-next-btn-text">
+                                Next
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pt-3 px-4 pb-5 bg-white">
+                        <div class="continue-shoping pb-2 mx-3">
+                            <img src="../imgs/store.svg" alt="">
+                            <span class="text-uppercase font-color-2">Continue shopping</span>
+                            <img src="../imgs/arrow-right.svg" alt="">
+                        </div>
+                        <div class="payment-summary mt-3 pt-2 px-3">
+                            <h6 class="text-uppercase font-color-1 fw-semibold">payment summary</h6>
+                            <!-- Items Price -->
+
+                            <div class="d-flex justify-content-between fs-14 mt-4">
+                                <div>
+                                    <span class="font-color-1 fw-bold">1X</span>
+                                    <span>Product name</span>
+                                </div>
+                                <div class="font-color-1">
+                                    <span class="fw-bold">18,350</span>
+                                    <span class="">EGP</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between fs-14 mt-4">
+                                <div>
+                                    <span class="font-color-1 fw-bold">1X</span>
+                                    <span>Product name</span>
+                                </div>
+                                <div class="font-color-1">
+                                    <span class="fw-bold">18,350</span>
+                                    <span class="">EGP</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between fs-14 mt-4">
+                                <div>
+                                    <span class="font-color-1 fw-bold">1X</span>
+                                    <span>Product name</span>
+                                </div>
+                                <div class="font-color-1">
+                                    <span class="fw-bold">18,350</span>
+                                    <span class="">EGP</span>
+                                </div>
+                            </div>
+                            <!-- Discount -->
+                            <div class="d-flex justify-content-between mt-4 pb-3 fs-14 error-color">
+                                <div class="">Discount</div>
+                                <div>-150 EGP</div>
+                            </div>
+                            <!-- Subtotal -->
+                            <div class="subtotal d-flex justify-content-between pt-4">
+                                <div>
+                                    Subtotal
+                                </div>
+                                <div class="font-color-1">
+                                    <span class="fw-bold">18,350</span>
+                                    <span class="">EGP</span>
+                                </div>
+                            </div>
+                            <!-- Delivery Fees -->
+                            <div class="delivery d-flex justify-content-between pt-3 pb-3">
+                                <div>
+                                    Delivery Fees
+                                </div>
+                                <div class="font-color-1">
+                                    <span class="fw-bold">50</span>
+                                    <span class="">EGP</span>
+                                </div>
+                            </div>
+                            <!-- Total amount -->
+                            <div class="total-amount d-flex justify-content-between pt-3 pb-3">
+                                <div>
+                                    Total amount
+                                </div>
+                                <div class="font-color-1 fs-24 fw-semibold">
+                                    <span class="fw-bold">EGP</span>
+                                    <span class="">20,380</span>
+                                </div>
+                            </div>
+                            <!-- Place Order -->
+                            <div id="placeOrderBtn"
+                                class="login-btn py-3 mt-4 d-flex align-items-center justify-content-center d-none">
+                                <div class="login-btn-text">Place Order</div>
+                            </div>
+                            <!-- Voucher or Coupon -->
+                            <div id="voucherBtn"
+                                class="login-with-google-facebook mt-4 py-3 px-3 text-center position-relative">
+                                <div class="google-icon ps-3">
+                                    <img src="../imgs/discount.svg" alt="" />
+                                </div>
+                                <div class="font-color-2 text-capitalize">add voucher or coupon</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End CheckOut -->
 
     <!-- Start Footer -->
-    <footer class="py-5 main-footer ">
+    <footer class="py-5 main-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -539,9 +843,9 @@
                 <div class="col-md-3">
                     <div class="d-flex flex-column">
                         <div class="font-color-2 mb-4">BUSINESS WITH US</div>
-                        <a href="./sellWithUs.html" class="font-color-1 mb-4">SELL ON OUR PLATFORM</a>
-                        <a href="./shippingPartner.html" class="font-color-1 mb-4">SHIPPING PARTNER</a>
-                        <a href="./expertsRecruiting.html" class="font-color-1">EXPERTS RECRUITING</a>
+                        <a href="../pages/sellWithUs.html" class="font-color-1 mb-4">SELL ON OUR PLATFORM</a>
+                        <a href="../pages/shippingPartner.html" class="font-color-1 mb-4">SHIPPING PARTNER</a>
+                        <a href="../pages/expertsRecruiting.html" class="font-color-1">EXPERTS RECRUITING</a>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -594,9 +898,8 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
