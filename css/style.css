@@ -1172,3 +1172,54 @@ input[type="range"]::-moz-range-thumb {
   -webkit-text-fill-color: transparent;
 }
 /* End Contact US */
+
+/* Start Careers */
+.careers-header {
+  height: 180px;
+  background: url(../imgs/contactusHeader.png),
+    linear-gradient(263deg, #f1f8fb 0%, rgba(241, 248, 251, 0) 55.67%);
+  background-repeat: no-repeat;
+}
+.chooseFile {
+  border: 1px solid var(--Light-Grey, #b3c9d0);
+}
+.drag-drop {
+  border: 1px dashed rgba(179, 201, 208, 0.6);
+  background: rgba(179, 201, 208, 0.05);
+}
+.inputDnD .form-control-file {
+  position: relative;
+  width: 100%;
+  min-height: 6em;
+  outline: none;
+  visibility: hidden;
+  cursor: pointer;
+  color: var(--Font-Color-2);
+}
+
+.drag-drop-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inputDnD .form-control-file::before {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 25px;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: visible;
+}
+.careers-img-logo {
+  position: absolute;
+  top: 38px;
+  left: 14px;
+}
+/* End Careers */

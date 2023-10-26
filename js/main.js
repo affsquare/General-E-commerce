@@ -140,4 +140,35 @@ placeOrderBtn.addEventListener("click", () => {
 cartBackBtn.addEventListener("click", () => {
   togleFunction();
 });
+
 /* End Check Out Stepper */
+/* Start Input File */
+// function getFile() {
+//   document.getElementById("upfile").click();
+// }
+
+// function sub(obj) {
+//   var file = obj.value;
+//   var fileName = file.split("\\");
+//   document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+//   document.myForm.submit();
+//   event.preventDefault();
+// }
+
+/* mmmmmmmmmmmmmmmmmmm */
+function readUrl(input) {
+  // const dragDrop = document.getElementById("dragDrop");
+  if (input.files && input.files[0]) {
+    let reader = new FileReader();
+    reader.onload = (e) => {
+      let imgData = e.target.result;
+      let imgName = input.files[0].name;
+      console.log(imgName);
+      document.getElementById("dragDrop").classList.add("d-none");
+      input.setAttribute("data-title", imgName);
+      console.log(e.target.result);
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+/* End Input File */
