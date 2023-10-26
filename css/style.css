@@ -1223,3 +1223,25 @@ input[type="range"]::-moz-range-thumb {
   left: 14px;
 }
 /* End Careers */
+
+/* Strat Sell With Us */
+.sellWithUs-header {
+  height: 180px;
+  background: url(../imgs/sellWithUsHeader.png),
+    linear-gradient(263deg, #f1f8fb 0%, rgba(241, 248, 251, 0) 55.67%);
+  background-repeat: no-repeat;
+}
+.sellWithUs-img-logo {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  background: var(--Font-Color-2, #5c7f8a);
+  padding: 10px;
+}
+textarea {
+  resize: none;
+}
+.sellWithUs .send-message-btn {
+  padding: 27px 0;
+}
+/* End Sell With Us */
