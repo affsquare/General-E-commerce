@@ -1176,7 +1176,7 @@ input[type="range"]::-moz-range-thumb {
 /* Start Careers */
 .careers-header {
   height: 180px;
-  background: url(../imgs/contactusHeader.png),
+  background: url(../imgs/careersHeader.png),
     linear-gradient(263deg, #f1f8fb 0%, rgba(241, 248, 251, 0) 55.67%);
   background-repeat: no-repeat;
 }
