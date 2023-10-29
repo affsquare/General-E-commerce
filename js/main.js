@@ -46,7 +46,7 @@ const expandAllCategoriesHeader = document.getElementById(
   "expand-allCategories-header"
 );
 
-navExpandedBtn.addEventListener("click", () => {
+navExpandedBtn?.addEventListener("click", () => {
   navPages.classList.toggle("opacity-0");
   allCategoriesHeader.classList.toggle("bg-transparent");
   expandAllCategoriesHeader.classList.toggle("start-0");
@@ -59,7 +59,7 @@ navExpandedBtn.addEventListener("click", () => {
 /* Strat Cart */
 const cart = document.getElementById("cart");
 const cartBtn = document.getElementById("cart-btn");
-cartBtn.addEventListener("click", () => {
+cartBtn?.addEventListener("click", () => {
   cart.classList.toggle("cart");
 });
 /* End Cart */
@@ -118,7 +118,7 @@ const voucherBtn = document.getElementById("voucherBtn");
 const placeOrder = document.getElementById("placeOrder");
 const cartBackBtn = document.getElementById("cartBackBtn");
 
-checkNextBtn.addEventListener("click", () => {
+checkNextBtn?.addEventListener("click", () => {
   personalInfo.classList.add("d-none");
   orderReview.classList.toggle("d-none");
   checkNextBtn.classList.add("d-none");
@@ -127,48 +127,72 @@ checkNextBtn.addEventListener("click", () => {
   voucherBtn.classList.toggle("d-none");
 });
 
-const togleFunction = () => {
+const orderToggleFunction = () => {
   orderReview.classList.toggle("d-none");
   placeOrder.classList.toggle("d-none");
   placeOrderBtn.classList.toggle("d-none");
   voucherBtn.classList.toggle("d-none");
 };
 
-placeOrderBtn.addEventListener("click", () => {
-  togleFunction();
+placeOrderBtn?.addEventListener("click", () => {
+  orderToggleFunction();
 });
-cartBackBtn.addEventListener("click", () => {
-  togleFunction();
+cartBackBtn?.addEventListener("click", () => {
+  orderToggleFunction();
 });
 
 /* End Check Out Stepper */
+
 /* Start Input File */
-// function getFile() {
-//   document.getElementById("upfile").click();
-// }
-
-// function sub(obj) {
-//   var file = obj.value;
-//   var fileName = file.split("\\");
-//   document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
-//   document.myForm.submit();
-//   event.preventDefault();
-// }
-
-/* mmmmmmmmmmmmmmmmmmm */
 function readUrl(input) {
-  // const dragDrop = document.getElementById("dragDrop");
   if (input.files && input.files[0]) {
     let reader = new FileReader();
     reader.onload = (e) => {
       let imgData = e.target.result;
       let imgName = input.files[0].name;
-      console.log(imgName);
       document.getElementById("dragDrop").classList.add("d-none");
       input.setAttribute("data-title", imgName);
-      console.log(e.target.result);
     };
     reader.readAsDataURL(input.files[0]);
   }
 }
 /* End Input File */
+
+/* Start Profile Settings */
+/* Security Settings */
+const myAccount = document.getElementById("myAccount");
+const securitySettings = document.getElementById("securitySettings");
+const securitySettingsBtn = document.getElementById("securitySettingsBtn");
+const securitySettingsEditSaveBtn = document.getElementById(
+  "securitySettingsEditSaveBtn"
+);
+const myAccountEdit = document.getElementById("myAccountEdit");
+const accoutEditBtn = document.getElementById("accoutEditBtn");
+const accountEditSaveBtn = document.getElementById("accountEditSaveBtn");
+const backToAccount = document.getElementById("backToAccount");
+
+const accountToggleFunction = () => {
+  myAccount.classList.toggle("d-none");
+  securitySettings.classList.toggle("d-none");
+};
+const accountEditToggleFunction = () => {
+  myAccount.classList.toggle("d-none");
+  myAccountEdit.classList.toggle("d-none");
+};
+securitySettingsBtn?.addEventListener("click", () => {
+  accountToggleFunction();
+});
+securitySettingsEditSaveBtn?.addEventListener("click", () => {
+  accountToggleFunction();
+});
+accoutEditBtn?.addEventListener("click", () => {
+  accountEditToggleFunction();
+});
+accountEditSaveBtn?.addEventListener("click", () => {
+  accountEditToggleFunction();
+});
+backToAccount?.addEventListener("click", () => {
+  accountToggleFunction();
+});
+
+/* End Profile Settings */

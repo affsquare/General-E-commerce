@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- bootstrap Link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google fonts Links -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>General-E-commerce</title>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header class="pt-4">
+        <div class="container">
+            <div class="row gx-4">
+                <div class="col-md-9">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <img src="../imgs/loginLogo.svg" alt="">
+                        </div>
+                        <div class="input w-100 ms-5">
+                            <label class="ps-3" for="search ">
+                                <img src="../imgs/search.svg" alt="" />
+                            </label>
+                            <input class="home-search font-color-2 ps-3 " id="search" type="search"
+                                placeholder="find out your lost.." />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-uppercase font-color-2" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="me-1" id="langFlag" src="../imgs/united-kingdom.svg" alt="" />
+                                English
+                            </button>
+                            <ul id="mainUl" class="dropdown-menu">
+                                <li>
+                                    <img class="w-100 px-3 py-2" value="ar" src="../imgs/saudi-arabia.png" alt=""
+                                        role="button" />
+                                </li>
+                                <li>
+                                    <img class="px-3 py-2" value="en" src="../imgs/united-kingdom.svg" alt=""
+                                        role="button" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-signin  position-relative d-flex justify-content-between align-items-center">
+                            <a class=" d-flex align-items-center text-uppercase font-color-2"
+                                href="/authentication/login.html">
+                                <img src="../imgs/user.svg" alt="" />
+                                <div class=" ms-2">sign in</div>
+                            </a>
+                            <div id="cart-btn" class="ms-4 ps-3 pointer">
+                                <img src="../imgs/cart.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+    <header id="allCategoriesHeader" class="all-categories mt-4 position-relative">
+        <div class="container position-relative d-flex justify-content-between align-items-center px-1">
+            <div id="expand-allCategories-header"
+                class="ps-3 expand-allCategories-header text-uppercase font-color-1 fs-18 fw-medium">all categories
+            </div>
+            <nav id="nav-pages" class="navbar navbar-expand-lg ">
+                <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link pe-3 active" aria-current="page" href="../pages/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="../pages/shop.html">Shop all</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="#">Clothes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="#">Beauty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="#">furniture</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="#">grocery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="#">electronics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-3" href="#">Kitchen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p class="mb-0">
+                <button id="nav-expanded-btn" class="border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="../imgs/hamburger.svg" alt="">
+                </button>
+            </p>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart" class="p-3 d-none ">
+            <div class="cart-header d-flex align-items-center pb-3">
+                <div class="cart-header-img d-flex justify-content-center align-items-center rounded-circle">
+                    <img src="../imgs/cart.svg" alt="">
+                </div>
+                <span class="fs-24 fw-semibold ms-3">Shopping Cart</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item mt-3 d-flex pb-3">
+                    <div class="cart-item-img d-flex justify-content-center align-items-center">
+                        <img class="w-80" src="../imgs/Electornics.png" alt="">
+                    </div>
+                    <div class="mt-2 ms-3">
+                        <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+                        <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+                        <span class="font-color-2 fs-19">EGP</span><span
+                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                        <div class="mt-3 d-flex align-items-center">
+                            <span><img src="../imgs/minus.svg" alt=""></span><span
+                                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg"
+                                    alt=""></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-item mt-3 d-flex pb-3">
+                    <div class="cart-item-img d-flex justify-content-center align-items-center">
+                        <img class="w-80" src="../imgs/Electornics.png" alt="">
+                    </div>
+                    <div class="mt-2 ms-3">
+                        <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+                        <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+                        <span class="font-color-2 fs-19">EGP</span><span
+                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                        <div class="mt-3 d-flex align-items-center">
+                            <span><img src="../imgs/minus.svg" alt=""></span><span
+                                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg"
+                                    alt=""></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-item mt-3 d-flex pb-3">
+                    <div class="cart-item-img d-flex justify-content-center align-items-center">
+                        <img class="w-80" src="../imgs/Electornics.png" alt="">
+                    </div>
+                    <div class="mt-2 ms-3">
+                        <h6 class="fw-semibold fs-19 font-color-1 mb-0">Product Name will be here..</h6>
+                        <p class="font-color-2 mb-3">Product Specs, example Grey</p>
+                        <span class="font-color-2 fs-19">EGP</span><span
+                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                        <div class="mt-3 d-flex align-items-center">
+                            <span><img src="../imgs/minus.svg" alt=""></span><span
+                                class="mx-4 fs-18 font-color-1 fw-semibold">2</span><span><img src="../imgs/plus.svg"
+                                    alt=""></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer pt-3">
+                <div class="d-flex align-items-center justify-content-between px-2">
+                    <span class="text-uppercase">Total amount</span>
+                    <span class="fs-24 fw-semibold">EGP 20,380</span>
+                </div>
+                <a href="../pages/checkout.html"
+                    class="login-btn py-3 mt-4 d-flex align-items-center justify-content-center ">
+                    <div class="login-btn-text">Checkout</div>
+                </a>
+                <div>
+                    <a href="../pages/cart.html"
+                        class="view-cart d-flex justify-content-center align-items-center mt-4 py-3 pointer">
+                        <div class="me-3">
+                            <img src="../imgs/blue-cart.svg" alt="">
+                        </div>
+                        <span class="blue-express">View Cart</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Expanded Nav -->
+    <div class="nav-allCategories  ">
+        <div class="collapse" id="collapseExample">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="nav-category position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img d-flex justify-content-center">
+                                    <img class="w-75" src="../imgs/iPhone 14.svg" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold text-uppercase ps-2">ELECTRONICS</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    Mobile & Tablet
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    laptops
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    desktops
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    accessories
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    spare parts
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="nav-category position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img">
+                                    <img class="w-100" src="../imgs/pngegg (2) 1.png" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold ps-3 text-uppercase">Beauty</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    selfcare
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    body
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    hair
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    men
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    perfume
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="nav-category position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img">
+                                    <img class="w-100" src="../imgs/pngegg (1) 1.png" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold ps-3 text-uppercase">grocery</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    vegetables
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    fruits
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    dairy
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    bakery
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    meat
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="nav-category position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img">
+                                    <img class="w-100" src="../imgs/pngegg (6) 1.png" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold text-uppercase ps-3">kitchen</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    fridges
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    cookers
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    kitchen
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    accessories
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    others
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="nav-category position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img">
+                                    <img class="w-100" src="../imgs/pngegg (3) 1.png" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold ps-3 text-uppercase">furniture</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    living rooms
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    bed rooms
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    office rooms
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    desks & tables
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    chars & sofas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class=" position-relative pt-3 pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="nav-img">
+                                    <img class="w-100" src="../imgs/removal 1.png" alt="">
+                                </div>
+                                <div class="font-color-1 fw-semibold ps-2 text-uppercase">clothes</div>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <div class="font-color-2 text-uppercase">
+                                    tops wear
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    sweet pants
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    jackets , coats
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    winter wears
+                                </div>
+                                <div class="font-color-2 mt-4 text-uppercase">
+                                    kids wear
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4 nav-allCategories-hr">
+                <div class="d-flex justify-content-between align-items-center  mb-3 pb-4">
+                    <div class="text-uppercase">
+                        <a class="pe-3 font-color-2" href="../pages/shop.html">shop all</a>
+                        <a class="px-3 font-color-2" href="../pages/aboutUs.html">about us</a>
+                        <a class="px-3 font-color-2" href="../pages/contactus.html">contact us</a>
+                        <a class="px-3 font-color-2" href="../pages/sellWithUs.html">sell with us</a>
+                        <a class="ps-3 font-color-2" href="../pages/careers.html">CAREERS</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="nav-support position-relative me-2 pe-4">
+                            <img src="../imgs/customer-care.svg" alt="">
+                            <span class="ms-2">support</span>
+                        </div>
+                        <div>
+                            <img src="../imgs/call-calling.svg" alt="">
+                            <span class="ms-2">19858</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Profile -->
+    <div class="container my-5">
+        <div class="my-4 pt-1 fs-14">
+            <a class="me-2 font-color-2" href="../pages/index.html">HOME</a><img src="../imgs/arrow-right.svg" alt="">
+            <span class="blue-express  ms-2">PROFILE</span>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="nav flex-column nav-pills me-3 p-5" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+
+                    <div class="d-flex align-items-end mb-4 pb-2">
+                        <div class="profile-setting-img me-3">
+                            <img class="w-100" src="../imgs/profile-setting-img.png" alt="">
+                        </div>
+                        <div class="font-color-1">
+                            <h6 class="fw-semibold text-uppercase">Abdelaziz</h6>
+                            <p class="fs-14">abdelazizeiwisha@gmail.com</p>
+                        </div>
+                    </div>
+                    <button class="nav-link active" id="v-pills-account-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account"
+                        aria-selected="true"><img class="me-4" src="../imgs/profile1.png" alt=""> My Account </button>
+                    <button class="nav-link" id="v-pills-orders-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile2.png" alt=""> My Orders</button>
+                    <button class="nav-link" id="v-pills-wishlist-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile3.png" alt=""> My Wishlist</button>
+                    <button class="nav-link" id="v-pills-wallet-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-wallet" type="button" role="tab" aria-controls="v-pills-wallet"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile4.png" alt=""> My Wallet</button>
+                    <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile5.png" alt=""> Payment
+                        Options</button>
+                    <button class="nav-link " id="v-pills-addresses-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-addresses" type="button" role="tab" aria-controls="v-pills-addresses"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile6.png" alt=""> My Addresses</button>
+                    <button class="nav-link" id="v-pills-returns-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-returns" type="button" role="tab" aria-controls="v-pills-returns"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile7.png" alt=""> My Returns</button>
+                    <button class="nav-link" id="v-pills-referral-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-referral" type="button" role="tab" aria-controls="v-pills-referral"
+                        aria-selected="false"><img class="me-4" src="../imgs/profile8.png" alt=""> Referral
+                        Program</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content py-5 px-4" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active px-3" id="v-pills-account" role="tabpanel"
+                        aria-labelledby="v-pills-account-tab" tabindex="0">
+                        <div id="myAccount" class="myAccount ">
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <h4 class="font-color-1">My Account </h4>
+                                <div id="securitySettingsBtn" class="security-settings font-color-2 py-2 px-3 pointer">
+                                    <img class="me-2" src="../imgs/security.svg" alt="">
+                                    Security Settings
+                                </div>
+                            </div>
+                            <h6 class=" mt-3 fw-bold">Personal Info.</h6>
+                            <div class="row mt-3">
+                                <!-- Full Name -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="personal-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Full Name</div>
+                                        <div class="font-color-1">Abdelaziz Eiwisha</div>
+                                    </div>
+                                </div>
+                                <!-- Birthdate -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="personal-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Birthdate</div>
+                                        <div class="font-color-1">01 /01 / 1980</div>
+                                    </div>
+                                </div>
+                                <!-- Gender -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="personal-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Gender</div>
+                                        <div class="font-color-1">Male</div>
+                                    </div>
+                                </div>
+                                <!-- Nationality -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="personal-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Nationality</div>
+                                        <div class="font-color-1">Egyptian</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class=" mt-5 fw-bold">Contact Info.</h6>
+                            <div class="row mt-3">
+                                <!-- Phone number -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="contact-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Phone number</div>
+                                        <div class="font-color-1">01063751574</div>
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="contact-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Email</div>
+                                        <div class="font-color-1">abdelazizeiwisha@gmail.com</div>
+                                    </div>
+                                </div>
+                                <!-- Facebook -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="contact-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Facebook</div>
+                                        <div class="font-color-1">facebook.com/abdelazizeiwisha</div>
+                                    </div>
+                                </div>
+                                <!-- Instagram -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="contact-info fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Instagram</div>
+                                        <div class="font-color-1">instagram.com/abdelaziz-eiwisha</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end mt-5 mb-3">
+                                <div id="accoutEditBtn" class="edit-btn mt-3"><img class="me-3"
+                                        src="../imgs/white-edit.svg" alt="">
+                                    <span class="edit-btn-text">Edit</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="securitySettings" class="securitySettings mb-5 d-none">
+                            <div id="backToAccount" class="d-flex justify-content-start pointer">
+                                <img src="../imgs/arrow-left.svg" alt="">
+                            </div>
+                            <h3 class="font-color-1 mb-3">security Settings</h3>
+                            <p class="p2">If you want to change your password follow the next steps..</p>
+                            <!--  Current Password -->
+                            <div class="col-md-12 mt-4">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="current_Password ">
+                                        <img src="../imgs/lock.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id=" current_Password" type="password"
+                                        placeholder="Current Password" />
+                                </div>
+                            </div>
+                            <!--   New Password -->
+                            <div class="col-md-12 mt-4">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="new_Password ">
+                                        <img src="../imgs/lock.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id=" new_Password" type="password"
+                                        placeholder="New Password" />
+                                </div>
+                            </div>
+                            <!--  Confirm Password -->
+                            <div class="col-md-12 mt-4">
+                                <div class="input d-flex align-items-center px-3 py-3">
+                                    <label for="confirm_Password ">
+                                        <img src="../imgs/lock.svg" alt="" />
+                                    </label>
+                                    <input class="font-color-2 ps-3 w-100" id=" confirm_Password" type="password"
+                                        placeholder=" Confirm Password" />
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end  mt-4 mb-3">
+                                <div id="securitySettingsEditSaveBtn" class="edit-btn mt-3 px-5  ">
+                                    <span class="edit-btn-text px-4">Save</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myAccountEdit" class="myAccount d-none">
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <h4 class="font-color-1">My Account </h4>
+
+                            </div>
+                            <h6 class=" mt-3 fw-bold">Personal Info.</h6>
+                            <div class="row mt-3">
+                                <!-- Full Name -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Full Name</div>
+                                        <input class="w-100" value="Abdelaziz Eiwisha" id="full_name" type="text"
+                                            placeholder="Full Name" />
+                                    </div>
+                                </div>
+                                <!-- Birthdate -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Birthdate</div>
+                                        <input class="w-100" value="01-01-1980" id="birthdate" type="text"
+                                            placeholder="Birthdate" onfocus="(this.type='date')"
+                                            onblur="(this.type='text')" />
+                                    </div>
+                                </div>
+                                <!-- Gender -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Gender</div>
+                                        <input class="w-100" value="Male" id="gender" type="text"
+                                            placeholder="Gender" />
+                                    </div>
+                                </div>
+                                <!-- Nationality -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Nationality</div>
+                                        <input class="w-100" value="Egyptian" id="nationality" type="text"
+                                            placeholder="Nationality" />
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class=" mt-5 fw-bold">Contact Info.</h6>
+                            <div class="row mt-3">
+                                <!-- Phone number -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Phone number</div>
+                                        <input class="w-100" value="01063751574" id="phonenumber" type="number"
+                                            placeholder="Phone Number" />
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6 mt-1">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Email</div>
+                                        <input class="w-100" value="abdelazizeiwisha@gmail.com" id="email" type="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <!-- Facebook -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Facebook</div>
+                                        <input class="w-100" value="facebook.com/abdelazizeiwisha" id="facebook"
+                                            type="text" placeholder="Facebook" />
+                                    </div>
+                                </div>
+                                <!-- Instagram -->
+                                <div class="col-md-6 mt-3">
+                                    <div class="input fs-14 pb-2">
+                                        <div class="font-color-2 mb-1">Instagram</div>
+                                        <input class="w-100" value="instagram.com/abdelaziz-eiwisha" id="instagram"
+                                            type="text" placeholder="Instagram" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end  mt-4 mb-3">
+                                <div id="accountEditSaveBtn" class="edit-btn mt-3 px-5  ">
+                                    <span class="edit-btn-text px-4">Save</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab"
+                        tabindex="0">orders</div>
+                    <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel"
+                        aria-labelledby="v-pills-wishlist-tab" tabindex="0">wishlist</div>
+                    <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab"
+                        tabindex="0">wallet</div>
+                    <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
+                        aria-labelledby="v-pills-payment-tab" tabindex="0">payment</div>
+                    <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
+                        aria-labelledby="v-pills-addresses-tab" tabindex="0">addresses</div>
+                    <div class="tab-pane fade" id="v-pills-returns" role="tabpanel"
+                        aria-labelledby="v-pills-returns-tab" tabindex="0">returns</div>
+                    <div class="tab-pane fade" id="v-pills-referral" role="tabpanel"
+                        aria-labelledby="v-pills-referral-tab" tabindex="0">referral</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Profile -->
+
+    <!-- Start Footer -->
+    <footer class="py-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <div>
+                            <img src="../imgs/logo.svg" alt="" />
+                        </div>
+                        <div class="d-flex align-items-center mt-5 pt-4 font-color-2">
+                            <div>
+                                <img src="../imgs/customer-care-svgrepo-com 1.svg" alt="" />
+                            </div>
+                            <div class="ms-2">19858</div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3 font-color-2">
+                            <div>
+                                <img src="../imgs/mail-svgrepo-com 1.svg" alt="" />
+                            </div>
+                            <div class="ms-2">username@gecomm.eg</div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3 font-color-2">
+                            <div>
+                                <img src="../imgs/location-on-svgrepo-com 1.svg" alt="" />
+                            </div>
+                            <div class="ms-2">1street name , City , Countery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="font-color-2 mb-4">SITE MAP</div>
+                        <div class="mb-4">ELECTRONICS</div>
+                        <div class="mb-4">GROCERY</div>
+                        <div class="">BEAUTY</div>
+                        <div class="payment-methods font-color-2 text-uppercase">
+                            payment methods
+                        </div>
+                        <div class="d-flex mt-4">
+                            <div class="me-3">
+                                <img src="../imgs/cash-money-svgrepo-com 1.svg" alt="" />
+                            </div>
+                            <div class="me-3">
+                                <img src="../imgs/visa-svgrepo-com 1.png" alt="" />
+                            </div>
+                            <div class="me-3">
+                                <img src="../imgs/master-card-svgrepo-com 1.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column">
+                        <div class="font-color-2 mb-4">BUSINESS WITH US</div>
+                        <a href="../pages/sellWithUs.html" class="font-color-1 mb-4">SELL ON OUR PLATFORM</a>
+                        <a href="../pages/shippingPartner.html" class="font-color-1 mb-4">SHIPPING PARTNER</a>
+                        <a href="../pages/expertsRecruiting.html" class="font-color-1">EXPERTS RECRUITING</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="font-color-2">BRANDS</div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>ADIDAS</div>
+                            <div>ADIDAS</div>
+                            <div>GUCCI</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>ACTIVE</div>
+                            <div>ACTIVE</div>
+                            <div>DIESEL</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>Nike</div>
+                            <div>Nike</div>
+                            <div>DIESEL</div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5 pt-4">
+                            <div class="pe-2">
+                                <img src="../imgs/_Group_.svg" alt="" />
+                            </div>
+                            <div class="px-2">
+                                <img src="../imgs/_Group_ (1).svg" alt="" />
+                            </div>
+                            <div class="px-2">
+                                <img src="../imgs/_Group_ (2).svg" alt="" />
+                            </div>
+                            <div class="ps-2">
+                                <img src="../imgs/_Group_ (3).svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="copy-right px-5 py-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                ©2022 <span class="font-color-1">Company</span> ® All rights reserved.
+            </div>
+            <div>
+                Proudly powered by <span class="font-color-1">AFFSQUARE.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

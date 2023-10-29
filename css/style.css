@@ -1050,19 +1050,22 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 600;
   transition: transform 0.5s;
 }
-.check-next-btn {
+.check-next-btn,
+.edit-btn {
   background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
   color: var(--White);
   transition: transform 0.5s;
 }
 .check-back-btn:hover,
-.check-next-btn:hover {
+.check-next-btn:hover,
+.edit-btn:hover {
   background: var(--White);
   transform: translateY(-10px);
   box-shadow: 0px 36px 56px 0px rgba(24, 45, 65, 0.1);
 }
 .check-back-btn:hover .check-back-btn-text,
-.check-next-btn:hover .check-next-btn-text {
+.check-next-btn:hover .check-next-btn-text,
+.edit-btn:hover .edit-btn-text {
   background: -webkit-linear-gradient(
     135deg,
     #2868a3 0%,
@@ -1273,3 +1276,61 @@ textarea {
   padding: 25px 0;
 }
 /* End Experts Recruiting */
+
+/* Start Profile */
+.profile-setting-img {
+  border-radius: 50%;
+  border: 5px solid var(--Light-Grey);
+}
+.nav-pills {
+  background: url(../imgs/profileTabs-bg.png), #f4f9fc;
+  background-repeat: no-repeat;
+}
+.nav-pills .nav-link {
+  background-color: var(--White) !important;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 0;
+  color: var(--Font-Color-2);
+  font-weight: 500 !important;
+  text-align: start;
+  transition: padding 0.3s;
+}
+.nav-pills .nav-link:hover {
+  padding: 12px 14px 12px 25px;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: var(--Font-Color-1) !important;
+  position: relative;
+  font-weight: 500 !important;
+  cursor: auto;
+}
+.nav-pills .nav-link.active {
+  padding: 12px 14px;
+}
+.nav-pills .nav-link.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
+}
+.tab-content,
+.security-settings {
+  border: 1px solid rgba(179, 201, 208, 0.5);
+}
+.personal-info,
+.contact-info {
+  border-bottom: 1.5px solid rgba(179, 201, 208, 0.6);
+}
+.edit-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 10px 48px 10px 14px;
+  cursor: pointer;
+}
+/* End Profile */
