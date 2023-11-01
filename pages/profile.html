@@ -449,6 +449,7 @@
             </div>
             <div class="col-md-8">
                 <div class="tab-content py-5 px-4" id="v-pills-tabContent">
+                    <!-- My Account -->
                     <div class="tab-pane fade show active px-3" id="v-pills-account" role="tabpanel"
                         aria-labelledby="v-pills-account-tab" tabindex="0">
                         <div id="myAccount" class="myAccount ">
@@ -654,25 +655,261 @@
                             </div>
 
                         </div>
-
                     </div>
-                    <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab"
-                        tabindex="0">orders</div>
-                    <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel"
-                        aria-labelledby="v-pills-wishlist-tab" tabindex="0">wishlist</div>
-                    <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab"
-                        tabindex="0">wallet</div>
-                    <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
-                        aria-labelledby="v-pills-payment-tab" tabindex="0">payment</div>
-                    <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
-                        aria-labelledby="v-pills-addresses-tab" tabindex="0">addresses</div>
-                    <div class="tab-pane fade" id="v-pills-returns" role="tabpanel"
-                        aria-labelledby="v-pills-returns-tab" tabindex="0">returns</div>
-                    <div class="tab-pane fade" id="v-pills-referral" role="tabpanel"
-                        aria-labelledby="v-pills-referral-tab" tabindex="0">referral</div>
+                    <!-- Orders -->
+                    <div class="tab-pane fade px-3" id="v-pills-orders" role="tabpanel"
+                        aria-labelledby="v-pills-orders-tab" tabindex="0">orders</div>
+                    <!-- Wishlist -->
+                    <div class="tab-pane fade px-3" id="v-pills-wishlist" role="tabpanel"
+                        aria-labelledby="v-pills-wishlist-tab" tabindex="0">
+                        <div class="wishlist">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4>My Wishlist </h4>
+                                <div class="d-flex align-items-center">
+                                    <div id="verticalGridBtn" class="grid-active p-2 me-3 pointer">
+                                        <img src="../imgs/grid-vertical.svg" alt="">
+                                    </div>
+                                    <div id="horizontalGridBtn" class=" p-2 pointer">
+                                        <img src="../imgs/grid-horizonta.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="verticalGrid" class="vertical-grid">
+                                <div class="wish-item py-3 px-4 mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="wish-item-img">
+                                            <img class="w-100" src="../imgs/Color.png" alt="">
+                                        </div>
+                                        <div class="ms-3">
+                                            <h6 class="font-color-1">Product Name will be here..</h6>
+                                            <p class="p2 mb-0">Product Specs, example Grey</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="font-color-2 fs-19">EGP</span><span
+                                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="wish-addToCart me-3 p-2 d-flex align-items-center">
+                                            <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                                            <span class="addToCart-tex ps-2">Add to cart</span>
+                                        </div>
+                                        <div>
+                                            <img src="../imgs/heart-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wish-item py-3 px-4 mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="wish-item-img">
+                                            <img class="w-100" src="../imgs/Color.png" alt="">
+                                        </div>
+                                        <div class="ms-3">
+                                            <h6 class="font-color-1">Product Name will be here..</h6>
+                                            <p class="p2 mb-0">Product Specs, example Grey</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="font-color-2 fs-19">EGP</span><span
+                                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="wish-addToCart me-3 p-2 d-flex align-items-center">
+                                            <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                                            <span class="addToCart-tex ps-2">Add to cart</span>
+                                        </div>
+                                        <div>
+                                            <img src="../imgs/heart-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wish-item py-3 px-4 mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="wish-item-img">
+                                            <img class="w-100" src="../imgs/Color.png" alt="">
+                                        </div>
+                                        <div class="ms-3">
+                                            <h6 class="font-color-1">Product Name will be here..</h6>
+                                            <p class="p2 mb-0">Product Specs, example Grey</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="font-color-2 fs-19">EGP</span><span
+                                            class="ms-1 font-color-1 fs-19 fw-bold">18,350</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="wish-addToCart me-3 p-2 d-flex align-items-center">
+                                            <img class="fs-12 font-color-2" src="../imgs/cart.svg" alt="" />
+                                            <span class="addToCart-tex ps-2">Add to cart</span>
+                                        </div>
+                                        <div>
+                                            <img src="../imgs/heart-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="horizontalGrid" class="d-none">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="wish-horizontal-item pb-3">
+                                            <div
+                                                class="wish-card-img position-relative py-5 d-flex justify-content-center align-items-baseline">
+                                                <img class="w-25" src="../imgs/iPhone-13.png" alt="" />
+                                                <div>
+                                                    <img src="../imgs/heart-red.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex px-3 justify-content-between align-items-center">
+                                                    <div class="blue-express text-uppercase d-flex align-items-center">
+                                                        <img class="pe-2"
+                                                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
+                                                            alt="" />
+                                                        express
+                                                    </div>
+                                                    <div class="addToCart-btn d-flex align-items-center">
+                                                        <img class="" src="../imgs/cart.svg" alt="" />
+                                                        <span class="addToCart-tex ps-2 fs-12">Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <p class="px-3 mt-3 font-color-2 fs-12">
+                                                    Product Name will be here..Product Name will be here
+                                                </p>
+                                                <div class="ps-3">
+                                                    <span class="font-color-2">EGP</span>
+                                                    <span class="font-color-1 fw-bold ">18,350</span>
+                                                </div>
+                                                <div class=" pe-3 d-flex align-items-center justify-content-between">
+                                                    <div class="px-3 sale-text">
+                                                        <span>EGP</span>
+                                                        <span class="sale-text-price">20,860</span>
+                                                    </div>
+
+                                                    <div class="font-color-2">
+                                                        <span>4.6</span>
+                                                        <img src="../imgs/star.svg" alt="" />
+                                                        <span>(7.6K)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="wish-horizontal-item pb-3">
+                                            <div
+                                                class="wish-card-img position-relative py-5 d-flex justify-content-center align-items-baseline">
+                                                <img class="w-25" src="../imgs/iPhone-13.png" alt="" />
+                                                <div>
+                                                    <img src="../imgs/heart-red.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex px-3 justify-content-between align-items-center">
+                                                    <div class="blue-express text-uppercase d-flex align-items-center">
+                                                        <img class="pe-2"
+                                                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
+                                                            alt="" />
+                                                        express
+                                                    </div>
+                                                    <div class="addToCart-btn d-flex align-items-center">
+                                                        <img class="" src="../imgs/cart.svg" alt="" />
+                                                        <span class="addToCart-tex ps-2 fs-12">Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <p class="px-3 mt-3 font-color-2 fs-12">
+                                                    Product Name will be here..Product Name will be here
+                                                </p>
+                                                <div class="ps-3">
+                                                    <span class="font-color-2">EGP</span>
+                                                    <span class="font-color-1 fw-bold ">18,350</span>
+                                                </div>
+                                                <div class=" pe-3 d-flex align-items-center justify-content-between">
+                                                    <div class="px-3 sale-text">
+                                                        <span>EGP</span>
+                                                        <span class="sale-text-price">20,860</span>
+                                                    </div>
+
+                                                    <div class="font-color-2">
+                                                        <span>4.6</span>
+                                                        <img src="../imgs/star.svg" alt="" />
+                                                        <span>(7.6K)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="wish-horizontal-item pb-3">
+                                            <div
+                                                class="wish-card-img position-relative py-5 d-flex justify-content-center align-items-baseline">
+                                                <img class="w-25" src="../imgs/iPhone-13.png" alt="" />
+                                                <div>
+                                                    <img src="../imgs/heart-red.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex px-3 justify-content-between align-items-center">
+                                                    <div class="blue-express text-uppercase d-flex align-items-center">
+                                                        <img class="pe-2"
+                                                            src="../imgs/shipping-fast-solid-svgrepo-com 1.svg"
+                                                            alt="" />
+                                                        express
+                                                    </div>
+                                                    <div class="addToCart-btn d-flex align-items-center">
+                                                        <img class="" src="../imgs/cart.svg" alt="" />
+                                                        <span class="addToCart-tex ps-2 fs-12">Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <p class="px-3 mt-3 font-color-2 fs-12">
+                                                    Product Name will be here..Product Name will be here
+                                                </p>
+                                                <div class="ps-3">
+                                                    <span class="font-color-2">EGP</span>
+                                                    <span class="font-color-1 fw-bold ">18,350</span>
+                                                </div>
+                                                <div class=" pe-3 d-flex align-items-center justify-content-between">
+                                                    <div class="px-3 sale-text">
+                                                        <span>EGP</span>
+                                                        <span class="sale-text-price">20,860</span>
+                                                    </div>
+
+                                                    <div class="font-color-2">
+                                                        <span>4.6</span>
+                                                        <img src="../imgs/star.svg" alt="" />
+                                                        <span>(7.6K)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Wallet -->
+                <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab"
+                    tabindex="0">wallet</div>
+                <!-- payment -->
+                <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab"
+                    tabindex="0">payment</div>
+                <!-- Addresses -->
+                <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
+                    aria-labelledby="v-pills-addresses-tab" tabindex="0">addresses</div>
+                <!-- Returns -->
+                <div class="tab-pane fade" id="v-pills-returns" role="tabpanel" aria-labelledby="v-pills-returns-tab"
+                    tabindex="0">returns</div>
+                <!-- Referral -->
+                <div class="tab-pane fade" id="v-pills-referral" role="tabpanel" aria-labelledby="v-pills-referral-tab"
+                    tabindex="0">referral</div>
             </div>
         </div>
+    </div>
     </div>
     <!-- End Profile -->
 

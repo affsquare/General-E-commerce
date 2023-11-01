@@ -46,6 +46,9 @@ h5,
 h6 {
   color: #182d41;
 }
+.fs-10 {
+  font-size: 10px;
+}
 .fs-12 {
   font-size: 12px;
 }
@@ -1319,7 +1322,9 @@ textarea {
   background: linear-gradient(135deg, #2868a3 0%, #3f91bd 39.06%, #61cee5 100%);
 }
 .tab-content,
-.security-settings {
+.security-settings,
+.wish-item,
+.wish-addToCart {
   border: 1px solid rgba(179, 201, 208, 0.5);
 }
 .personal-info,
@@ -1332,5 +1337,17 @@ textarea {
   align-items: center;
   padding: 10px 48px 10px 14px;
   cursor: pointer;
+}
+.grid-active {
+  background-color: #f1f8fb;
+}
+.wish-item-img {
+  width: 40px;
+  height: 100%;
+}
+.wish-card-img > div {
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
 /* End Profile */

@@ -166,6 +166,8 @@ const securitySettingsBtn = document.getElementById("securitySettingsBtn");
 const securitySettingsEditSaveBtn = document.getElementById(
   "securitySettingsEditSaveBtn"
 );
+
+/* Account Toggle */
 const myAccountEdit = document.getElementById("myAccountEdit");
 const accoutEditBtn = document.getElementById("accoutEditBtn");
 const accountEditSaveBtn = document.getElementById("accountEditSaveBtn");
@@ -195,4 +197,23 @@ backToAccount?.addEventListener("click", () => {
   accountToggleFunction();
 });
 
+/* Wish List Grid */
+const verticalGridBtn = document.getElementById("verticalGridBtn");
+const horizontalGridBtn = document.getElementById("horizontalGridBtn");
+const verticalGrid = document.getElementById("verticalGrid");
+const horizontalGrid = document.getElementById("horizontalGrid");
+
+const gridToggleFunction = () => {
+  verticalGrid.classList.toggle("d-none");
+  horizontalGrid.classList.toggle("d-none");
+  verticalGridBtn.classList.toggle("grid-active");
+  horizontalGridBtn.classList.toggle("grid-active");
+};
+
+verticalGridBtn?.addEventListener("click", () => {
+  gridToggleFunction();
+});
+horizontalGridBtn?.addEventListener("click", () => {
+  gridToggleFunction();
+});
 /* End Profile Settings */
